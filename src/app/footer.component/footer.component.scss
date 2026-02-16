@@ -1,0 +1,49 @@
+/* screen - footer */
+
+.footer {
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
+  height: 33px;
+  justify-content: center;
+  min-width: 1440px;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.footer .ctl-copyright {
+  align-items: center;
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin-bottom: -10.00px;
+  margin-top: -10.00px;
+  position: relative;
+}
+
+.footer .app-copyright {
+  align-items: center;
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 33px;
+  justify-content: center;
+  position: relative;
+}
+
+.footer .textfield {
+  color: var(--ctl-text-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  letter-spacing: 0.50px;
+  line-height: 24px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}

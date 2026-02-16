@@ -1,0 +1,63 @@
+// https://www.youtube.com/watch?v=YzFoGNEHtgw
+// https://themes.angular-material.dev/
+
+.mat-light-theme {
+  --sys-background: #f6fafe;
+  --sys-on-background: #171c1f;
+  --sys-surface: #f6fafe;
+  --sys-surface-dim: #d6dadf;
+  --sys-surface-bright: #f6fafe;
+  --sys-surface-container-lowest: #ffffff;
+  --sys-surface-container-low: #f0f4f8;
+  --sys-surface-container: #eaeef2;
+  --sys-surface-container-high: #e5e9ed;
+  --sys-surface-container-highest: #dfe3e7;
+  --sys-on-surface: #171c1f;
+  --sys-surface-variant: #dce3e9;
+  --sys-on-surface-variant: #40484d;
+  --sys-inverse-surface: #2c3134;
+  --sys-inverse-on-surface: #edf1f5;
+  --sys-outline: #71787d;
+  --sys-outline-variant: #c0c7cd;
+  --sys-shadow: #000000;
+  --sys-scrim: #000000;
+  --sys-surface-tint: #196584;
+  --sys-primary: #196584;
+  --sys-on-primary: #ffffff;
+  --sys-primary-container: #c2e8ff;
+  --sys-on-primary-container: #001e2b;
+  --sys-inverse-primary: #8ecff2;
+  --sys-secondary: #1c6585;
+  --sys-on-secondary: #ffffff;
+  --sys-secondary-container: #c3e8ff;
+  --sys-on-secondary-container: #001e2c;
+  --sys-tertiary: #5f5791;
+  --sys-on-tertiary: #ffffff;
+  --sys-tertiary-container: #e5deff;
+  --sys-on-tertiary-container: #1b1149;
+  --sys-error: #904a43;
+  --sys-on-error: #ffffff;
+  --sys-error-container: #ffdad5;
+  --sys-on-error-container: #3b0907;
+  --sys-neutral: #73787c;
+  --sys-neutral-variant: #71787d;
+  --sys-primary-fixed: #c2e8ff;
+  --sys-primary-fixed-dim: #8ecff2;
+  --sys-on-primary-fixed: #001e2b;
+  --sys-on-primary-fixed-variant: #004d67;
+  --sys-secondary-fixed: #c3e8ff;
+  --sys-secondary-fixed-dim: #8fcef3;
+  --sys-on-secondary-fixed: #001e2c;
+  --sys-on-secondary-fixed-variant: #004c68;
+  --sys-tertiary-fixed: #e5deff;
+  --sys-tertiary-fixed-dim: #c8bfff;
+  --sys-on-tertiary-fixed: #1b1149;
+  --sys-on-tertiary-fixed-variant: #473f77;
+  --sys-inverse-secondary: #8fcef3;
+  --sys-inverse-tertiary: #c8bfff;
+  --sys-inverse-error: #ffb4ab;
+  --sys-error-fixed: #ffdad5;
+  --sys-error-fixed-dim: #ffb4ab;
+  --sys-on-error-fixed: #3b0907;
+  --sys-on-error-fixed-variant: #73342d;
+}

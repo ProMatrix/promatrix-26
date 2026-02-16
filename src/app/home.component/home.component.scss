@@ -1,0 +1,223 @@
+/* screen - home */
+
+.home {
+  background-color: var(--background-color);
+  height: 1080px;
+  position: relative;
+   margin-top: 75px;
+}
+
+.home .top-title {
+  color: var(--primary-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: 36px;
+  font-weight: 400;
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 32.4px;
+  position: absolute;
+  top: 64px;
+  width: 716px;
+}
+
+.home .landing-background {
+  height: 402px;
+  left: 782px;
+  object-fit: cover;
+  position: absolute;
+  top: -3px;
+  width: 658px;
+}
+
+.home .welcome-conditional-text {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
+  height: 163px;
+  left: 115px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 109px;
+  width: 782px;
+}
+
+.home .text {
+  width: 725px;
+}
+
+.home .middle-title {
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 259px;
+  width: 716px;
+}
+
+.home .bottom-title {
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 292px;
+  width: 716px;
+}
+
+.home .more-info-conditional-text {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
+  height: 193px;
+  left: 115px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 339px;
+  width: 767px;
+}
+
+.home .chatbot-title {
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 28.8px;
+  position: absolute;
+  top: 549px;
+  width: 1219px;
+}
+
+.home .chatbot-info-conditional-text {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 10px;
+  left: 115px;
+  padding: 0px 10px;
+  position: absolute;
+  top: 601px;
+  width: 1220px;
+}
+
+.home .text-1 {
+  width: 1185px;
+}
+
+.home .ui-expanding-row {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 459px;
+  position: absolute;
+  top: 993px;
+  width: 456px;
+}
+
+.home .spacer {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.home .more-information-button {
+  align-items: center;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  padding: 10px 9px;
+  position: relative;
+}
+
+.home .textfield {
+  color: var(--background-color);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 27.5px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home .chatbot-talkshow-ctrl {
+  height: 121px;
+  left: 912px;
+  position: absolute;
+  top: 420px;
+  width: 441px;
+}
+
+.home .overlap-group {
+  background-color: #02142c;
+  border-radius: 51px;
+  height: 113px;
+  left: 18px;
+  position: relative;
+  top: 4px;
+  width: 404px;
+}
+
+.home .host-soundwave {
+  height: 38px;
+  left: 104px;
+  object-fit: cover;
+  position: absolute;
+  top: 39px;
+  width: 100px;
+}
+
+.home .hostbot-1 {
+  height: 98px;
+  left: 9px;
+  object-fit: cover;
+  position: absolute;
+  top: 7px;
+  width: 100px;
+}
+
+.home .guest-soundwave {
+  height: 38px;
+  left: 203px;
+  object-fit: cover;
+  position: absolute;
+  top: 39px;
+  width: 100px;
+}
+
+.home .guestbot-1 {
+  height: 98px;
+  left: 298px;
+  object-fit: cover;
+  position: absolute;
+  top: 8px;
+  width: 100px;
+}
+
+.home .frame-6 {
+  background-color: #02142c;
+  height: 38px;
+  left: 202px;
+  position: absolute;
+  top: 39px;
+  width: 2px;
+}
+
+.home .text-2 {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+}

@@ -1,0 +1,24 @@
+<div class="container-center-horizontal">
+  <div class="contact screen">
+    <div class="w3-animate-zoom comments-or-questions-title rationale-component"  >Comments Or Questions?</div>
+    <div class="w3-animate-zoom error-rationale rationale-component" *ngIf="httpError" ><p class="text roboto-normal-gravel-16px">Error: There was an problem during transmission to the server. Please try later!</p></div>
+    <div class="w3-animate-zoom thank-you-rationale rationale-component" *ngIf="smsSendComplete && !httpError" ><p class="text roboto-normal-gravel-16px">Thank you for your interest in ProMatrix! We are looking forward to exploring your software developmentstrategy and assist in giving you the competative anvantage.</p></div>
+    <div class="w3-animate-zoom request-for-comments-rationale rationale-component" *ngIf="!smsSendComplete && !httpError" ><p class="text roboto-normal-gravel-16px">ProMatrix offers a rapid approach to software development, providing low-cost, low-code solutions fromdesign to deployment. Their offerings include integration with AI, multiple languages, help desks, andcontact centers, alongside compatibility with major services like GCP, Azure, and AWS.<br><br>Ifyou're seeking consultation on software development, enterprise architecture, or AI solutions, ProMatrixinvites you to explore their consulting options and scheduling availability.</p></div>
+    <div class="ui-expanding-container w3-animate-zoom">
+      <div class="spacer"></div>
+      <div class="layoutpageitem layoutpageitem-3">
+        <mat-form-field class="sms-email mat-text-field" ><mat-label>Email or Phone</mat-label><input matInput [formControl]="contactFormControl" type="email" [required]="true" placeholder="Required" value="" ><mat-error *ngIf="contactFormControl.hasError('email') && !contactFormControl.hasError('required')">Please enter valid information</mat-error><mat-error *ngIf="contactFormControl.hasError('required')">Input is <strong>required</strong></mat-error></mat-form-field>
+        <mat-button-toggle-group   class="email-phone-toggle mat-button-toggle-group"   [(ngModel)]="contactBy" [vertical]="false" ><mat-button-toggle class="mat-button-toggle" value="Email">Email</mat-button-toggle><mat-button-toggle class="mat-button-toggle" value="Phone">Phone</mat-button-toggle></mat-button-toggle-group>
+      </div>
+      <div class="layoutpageitem-1 layoutpageitem-3">
+        <mat-form-field class="sms-message mat-text-area" ><mat-label>Comments or Questions</mat-label><textarea matInput  [maxLength]="1000" [rows]="5" [formControl]="messageFormControl" type="text" [required]="true" placeholder="Required" value="" ></textarea><mat-error *ngIf="messageFormControl.hasError('required')">Input is <strong>required</strong></mat-error></mat-form-field>
+      </div>
+      <div class="layoutpageitem-2 layoutpageitem-3">
+        <button class="sms-send mat-form-button" [disabled]="formInvalid" (click)="onclickSubmit()" mat-flat-button [ngClass]="classByDisabled" title=""   >&nbsp;&nbsp;Submit&nbsp;&nbsp;</button>
+      </div>
+      <div class="spacer"></div>
+      <div class="copyright"></div>
+    </div>
+    <div class="side-animation" [ngClass]="appServices.darkMode ? 'side-animation-model-dark' : 'side-animation-model-light'"></div>
+  </div>
+</div>

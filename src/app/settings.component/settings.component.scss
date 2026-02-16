@@ -1,0 +1,122 @@
+/* screen - settings */
+
+.settings {
+  align-items: flex-end;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  height: 457px;
+  padding: 15px 8px;
+  width: 70px;
+}
+
+.settings .dark-mode2-1 {
+  height: 40px;
+  margin-right: 9px;
+  object-fit: cover;
+  position: relative;
+  width: 40px;
+}
+
+.settings .dark-mode-toggle {
+  height: 32px;
+  position: relative;
+  width: 53px;
+}
+
+.settings .frame {
+  align-items: flex-start;
+  display: flex;
+  min-width: 52px;
+}
+
+.settings .whatever {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  min-width: 52px;
+}
+
+.settings .overlap-group {
+  align-items: center;
+  background-color: var(--bon-jour);
+  border: 2px solid;
+  border-color: var(--background-color);
+  border-radius: 100px;
+  display: flex;
+  height: 32px;
+  min-width: 52px;
+  padding: 0 12px;
+}
+
+.settings .handle {
+  background-color: var(--m3syslightoutline);
+  border-radius: 100px;
+  height: 16px;
+  width: 16px;
+}
+
+.settings .global_translate-1 {
+  height: 40px;
+  margin-right: 8px;
+  margin-top: 25px;
+  object-fit: cover;
+  position: relative;
+  width: 40px;
+}
+
+.settings .language-select-toggle-vertical {
+  align-items: flex-start;
+  background-color: var(--color-ctl-unselected-light);
+  border: 1px solid;
+  border-color: var(--color-ctl-text-dark);
+  display: inline-flex;
+  margin-right: 5px;
+  margin-top: 3px;
+  position: relative;
+  overflow: initial;
+}
+
+.settings .language-select-button-toggle {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 1px;
+  position: relative;
+}
+
+.settings .nav-list-item-2 {
+  background-color: var(--ctl-selected-color);
+  border-color: var(--pale-slate);
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.settings .nav-list-item {
+  align-items: center;
+  background-color: var(--ctl-unselected-color);
+  border-color: var(--pale-slate);
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.settings .nav-list-item-1 {
+  background-color: var(--ctl-unselected-color);
+}
+
+.settings .nav-list-item-3 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}

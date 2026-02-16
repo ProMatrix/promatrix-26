@@ -1,0 +1,1010 @@
+{
+  "extractFonts": true,
+  "extractGlobals": true,
+  "supportedLanguages": ["EN", "ES", "FR", "DE", "RU", "ZH"],
+  "translationFilePath": "C:/ProMatrix.2/ProMatrix-2024/src/app/translations.json",
+  "projectPages": [
+    {
+      "enabled": false,
+      "name": "app",
+      "htmlFile": "app.html",
+      "componentHtml": "app.component.html",
+      "cssFile": "app.css",
+      "scssFile": "app.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "nav-button-link",
+          "className": "prototype-nav-link",
+          "angularLogic": "*ngIf=\"environment.name === 'Development'\"",
+          "click": "appServices.pageToDisplay = 'PROTOTYPES'"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "nav-button-link",
+          "className": "showcase-nav-link",
+          "click": "appServices.pageToDisplay = 'SHOWCASE'"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "nav-button-link",
+          "className": "about-nav-link",
+          "click": "appServices.pageToDisplay = 'ABOUT US'"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "nav-button-link",
+          "className": "contact-nav-link",
+          "click": "appServices.pageToDisplay = 'CONTACT'"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "controlType": "add-logo-click",
+          "className": "home-frame",
+          "click": "appServices.pageToDisplay = 'HOME'"
+        },
+        {
+          "enabled": true,
+          "className": "app",
+          "controlType": "add-a-class",
+          "addition": "fade-in"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-html-file-to-page",
+          "addition": "app.content.html"
+        },
+        {
+          "enabled": true,
+          "controlType": "replace-property-in-css-recursive",
+          "remove": "  background-color",
+          "addition": "  background-color: var(--background-color);"
+        },
+        {
+          "enabled": true,
+          "controlType": "replace-properties-in-class",
+          "className": "app",
+          "remove": "position",
+          "addition": "fixed"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "app",
+          "addition": "top: 0;"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "app",
+          "addition": "z-index: 100;"
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "footer",
+      "htmlFile": "footer.html",
+      "componentHtml": "footer.component.html",
+      "cssFile": "footer.css",
+      "scssFile": "footer.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/footer.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "controlType": "copyright-component",
+          "className": "app-copyright"
+        }
+      ],
+      "editsAndAdditions": [
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "settings",
+      "htmlFile": "settings.html",
+      "componentHtml": "settings.component.html",
+      "cssFile": "settings.css",
+      "scssFile": "settings.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/settings.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "dark-mode-toggle",
+          "labelPosition": "after",
+          "label": "",
+          "ngModel": "appServices.darkMode"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "mat-button-toggle-ctl",
+          "className": "language-select-toggle-vertical",
+          "ngModel": "appServices.language",
+          "vertical": true,
+          "hideSingleSelectionIndicator": "true"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "language-select-toggle-vertical",
+          "addition": "overflow: initial;"
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "home",
+      "htmlFile": "home.html",
+      "componentHtml": "home.component.html",
+      "cssFile": "home.css",
+      "scssFile": "home.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/home.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "mat-button",
+          "className": "more-information-button",
+          "click": "appServices.pageToDisplay = 'SHOWCASE'",
+          "disabled": "false"
+        },
+        {
+          "enabled": true,
+          "controlType": "animated-gif",
+          "className": "landing-background",
+          "filePath": "img/landing-background.png",
+          "replacement": "landing-background"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "welcome-conditional-text",
+          "angularLogic": "*ngIf=\"showWelcomeText\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "more-info-conditional-text",
+          "angularLogic": "*ngIf=\"showMoreInfoText\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "chatbot-info-conditional-text",
+          "angularLogic": "*ngIf=\"showChatbotInfoText\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "zoom-title",
+          "className": "top-title",
+          "angularLogic": "*ngIf=\"showTopTitle\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "zoom-title",
+          "className": "middle-title",
+          "angularLogic": "*ngIf=\"showMiddleTitle\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "zoom-title",
+          "className": "bottom-title",
+          "angularLogic": "*ngIf=\"showBottomTitle\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "zoom-title",
+          "className": "chatbot-title",
+          "angularLogic": "*ngIf=\"showChatbotTitle\""
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "chatbot-talkshow-ctrl",
+          "click": "alert('Talkshow coming soon!')",
+          "ngIf": "showTalkShowCtrl"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "host-soundwave",
+          "ngIf": "hostSoundwave"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guest-soundwave",
+          "ngIf": "guestSoundwave"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "className": "chatbot-talkshow-ctrl",
+          "controlType": "add-a-class",
+          "addition": "w3-animate-zoom"
+        },
+        {
+          "enabled": true,
+          "className": "chatbot-talkshow-ctrl",
+          "controlType": "add-a-class",
+          "addition": "nav-link-unselected"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "home",
+          "remove": "width"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "home",
+          "addition": "margin-top: 75px;"
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "about",
+      "htmlFile": "about.html",
+      "componentHtml": "about.component.html",
+      "cssFile": "about.css",
+      "scssFile": "about.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/about.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "company-profile-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "company-profile-rationale"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-rationale-text"
+        },
+        {
+          "enabled": true,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "ai-strategies-rationale-image"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "automation-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "automation-rationale"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "integration-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "integration-rationale"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "innovation-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "innovation-rationale"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "courses-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "courses-rationale"
+        },
+        {
+          "enabled": true,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom", "fade-in"],
+          "className": "founder-cto"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "founder-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "founder-cto-rationale"
+        },
+
+        {
+          "enabled": true,
+          "controlType": "animated-gif",
+          "className": "side-animation",
+          "filePath": "img/side-animation.png",
+          "replacement": "side-thing-background"
+        }
+
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "controlType": "replace-property-in-css-recursive",
+          "remove": "  background-color",
+          "addition": "  background-color: var(--background-color);"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "about",
+          "remove": "width"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "about",
+          "addition": "margin-top: 75px;"
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "prototype",
+      "htmlFile": "prototype.html",
+      "componentHtml": "prototype.component.html",
+      "cssFile": "prototype.css",
+      "scssFile": "prototype.component.scss",
+      "cssImagePath": "../../img",
+      "componentFolder": "app/prototype.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "zoom-image",
+          "className": "image-wonder-number",
+          "angularLogic": "*ngIf=\"aiInterface.randomNumber !== ''\""
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "zoom-title",
+          "className": "guess-this-number",
+          "angularLogic": "*ngIf=\"aiInterface.randomNumber !== ''\""
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "override": false,
+          "controlType": "mat-button-toggle-group",
+          "className": "host-guest",
+          "ngModel": "aiInterface.talkshowAgent",
+          "change": "aiInterface.onchangeTalkshowAgent()",
+          "vertical": "false",
+          "disabled": "aiInterface.switchingAgents",
+          "groupItemsDisabled": ["aiInterface.hostUnavailable", "aiInterface.guestUnavailable"]
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "override": false,
+          "controlType": "mat-button-toggle-group",
+          "className": "pause-continuous",
+          "ngModel": "aiInterface.continuous",
+          "ngIf": "aiInterface.hostOnline && aiInterface.guestOnline",
+          "change": "aiInterface.onchangeContinuousEnabled()",
+          "hideSingleSelectionIndicator": "true",
+          "vertical": "false"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "override": false,
+          "controlType": "mat-button-toggle-group",
+          "className": "guest-save-goto",
+          "ngModel": "aiInterface.bookmark",
+          "ngIf": "aiInterface.appDuplex === 'guest-half-duplex'",
+          "change": "aiInterface.onchangeSaveGoto()",
+          "hideSingleSelectionIndicator": "true",
+          "vertical": "false"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "override": false,
+          "controlType": "mat-button-toggle-group",
+          "className": "host-save-goto",
+          "ngModel": "aiInterface.bookmark",
+          "ngIf": "aiInterface.appDuplex === 'host-half-duplex'",
+          "change": "aiInterface.onchangeSaveGoto()",
+          "hideSingleSelectionIndicator": "true",
+          "vertical": "false"
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "show-chatbot-toggle-button",
+          "labelPosition": "before",
+          "label": "Show Chatbot",
+          "ngModel": "aiInterface.chatbotShow",
+          "ngIf": "aiInterface.chatbotOnline"
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "host-opening-toggle-button",
+          "labelPosition": "after",
+          "label": "Opening",
+          "ngModel": "aiInterface.openingEnabled",
+          "ngIf": "aiInterface.chatbotOnline && aiInterface.selectedAgent === 'Host'"
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "host-speech-toggle-button",
+          "labelPosition": "after",
+          "label": "Speech",
+          "ngModel": "aiInterface.speechEnabled",
+          "ngIf": "aiInterface.chatbotOnline && aiInterface.selectedAgent === 'Host'"
+        },
+
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "guest-opening-toggle-button",
+          "labelPosition": "before",
+          "label": "Opening",
+          "ngModel": "aiInterface.openingEnabled",
+          "ngIf": "aiInterface.chatbotOnline && aiInterface.selectedAgent === 'Guest'"
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "guest-speech-toggle-button",
+          "labelPosition": "before",
+          "label": "Speech",
+          "ngModel": "aiInterface.speechEnabled",
+          "ngIf": "aiInterface.chatbotOnline && aiInterface.selectedAgent === 'Guest'"
+        },
+
+
+        {
+          "enabled": true,
+          "controlType": "mat-slide-toggle",
+          "className": "reload-toggle-button",
+          "labelPosition": "after",
+          "label": "Reload",
+          "change": "aiInterface.onchangeReloadSession()",
+          "ngModel": "aiInterface.reloadSession",
+          "ngIf": "aiInterface.chatbotOnline"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "html-textarea",
+          "className": "chat-history-textarea",
+          "label": "Chat History...",
+          "placeholder": "Chat History...",
+          "type": "text",
+          "value": "Begin here...",
+          "required": "",
+          "maxLength": 100000,
+          "rows": 150,
+          "ngModel": "aiInterface.chatbotHistory",
+          "ngIf": "aiInterface.chatbotOnline"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "mat-select",
+          "className": "language-select",
+          "label": "Voice & Language Selection",
+          "value": "aiInterface.selectedVoice",
+          "optionString": "*ngFor=\"let voice of aiInterface.voices\" [value]=\"voice.name\"",
+          "optionName": "voice.name",
+          "ngIf": "aiInterface.chatbotOnline"
+        },
+        {
+          "enabled": true,
+          "controlType": "animated-gif",
+          "className": "side-animation",
+          "filePath": "img/side-animation.png",
+          "replacement": "side-thing-background"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "hostbot-soundwave-1 ",
+          "ngIf": "(aiInterface.chatbotSpeaking && aiInterface.selectedAgent === 'Host') || (aiInterface.selectedAgent === 'Guest' && aiInterface.soundDetected)"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guestbot-soundwave-1 ",
+          "ngIf": "(aiInterface.chatbotSpeaking && aiInterface.selectedAgent === 'Guest') || (aiInterface.selectedAgent === 'Host' && aiInterface.soundDetected)"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "hostbot-listening-1",
+          "ngIf": "(aiInterface.guestSpeaking && aiInterface.selectedAgent === 'Host') || (aiInterface.soundStarted && aiInterface.selectedAgent === 'Host') "
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "hostbot-online-1",
+          "ngIf": "aiInterface.hostOnline && aiInterface.selectedAgent === 'Host'"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guestbot-listening-1",
+          "ngIf": "(aiInterface.hostSpeaking && aiInterface.selectedAgent === 'Guest') || (aiInterface.soundStarted && aiInterface.selectedAgent === 'Guest') "
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guestbot-online-1",
+          "ngIf": "aiInterface.guestOnline && aiInterface.selectedAgent === 'Guest'"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "hostbot-standby-1",
+          "ngIf": "aiInterface.showHostBotFace()"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guestbot-standby-1",
+          "ngIf": "aiInterface.showGuestBotFace()"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "host-human-online-1",
+          "ngIf": "aiInterface.showMrSmartyPantsFace()"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guest-human-online-1",
+          "ngIf": "aiInterface.showMrSmartyPantsFace()"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "hostbot-soundwave-still-1",
+          "ngIf": "aiInterface.appDuplex !== 'guest-full-duplex'"
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "guestbot-soundwave-still-1",
+          "ngIf": "aiInterface.appDuplex !== 'host-full-duplex'"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "className": "guess-this-number",
+          "controlType": "replace-raw-html-in-element",
+          "remove": "10",
+          "addition": "{{aiInterface.randomNumber}}"
+        },
+        {
+          "enabled": false,
+          "className": "image-wonder-number",
+          "controlType": "add-raw-html-to-element",
+          "addition": "*ngIf=\"aiInterface.randomNumber !== ''\""
+        },
+        {
+          "enabled": true,
+          "className": "image-wonder-number",
+          "controlType": "add-a-class",
+          "addition": "fade-in"
+        },
+        {
+          "enabled": true,
+          "className": "hostbot-online-1",
+          "controlType": "add-a-class",
+          "addition": "fade-in"
+        },
+        {
+          "enabled": true,
+          "className": "guestbot-online-1",
+          "controlType": "add-a-class",
+          "addition": "fade-in"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-html-file-to-page",
+          "addition": "prototype.content.html"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "prototype",
+          "remove": "width"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "opening-toggle-button",
+          "remove": "height"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "side-animation",
+          "remove": "left"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "side-animation",
+          "remove": "top"
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "showcase",
+      "htmlFile": "showcase.html",
+      "componentHtml": "showcase.component.html",
+      "cssFile": "showcase.css",
+      "scssFile": "showcase.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/showcase.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-rationale"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "chatmate-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "chatmate-rationale-text"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "chatmate-rationale-image"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "smart-build-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "smart-build-rationale-text"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "smart-build-rationale-image"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "help-system-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "help-system-rationale-text"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "help-system-rationale-image"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "hands-free-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "hands-free-rationale-text"
+        },
+        {
+          "enabled": true,
+          "translate": false,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "hands-free-rationale-image"
+        },
+
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "translation-agent-title"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "translation-agent-rationale-text"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "translation-agent-rationale-image"
+        },
+
+
+        {
+          "enabled": false,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "template-title"
+        },
+        {
+          "enabled": false,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "project-templates-rationale"
+        },        
+        {
+          "enabled": false,
+          "controlType": "video-component",
+          "className": "project-templates-introduction-video",
+          "filePath": "mp4/figma-to-angular-part1.mp4"
+        },
+
+
+        {
+          "enabled": true,
+          "controlType": "animated-gif",
+          "className": "side-animation",
+          "filePath": "img/side-animation.png",
+          "replacement": "side-thing-background"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "controlType": "replace-property-in-css-recursive",
+          "remove": "  background-color",
+          "addition": "  background-color: var(--background-color);"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "showcase",
+          "remove": "width"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "showcase",
+          "addition": "margin-top: 75px;"
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "contact",
+      "htmlFile": "contact.html",
+      "componentHtml": "contact.component.html",
+      "cssFile": "contact.css",
+      "scssFile": "contact.component.scss",
+      "cssImagePath": "../img",
+      "componentFolder": "app/contact.component",
+      "angularControls": [
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "comments-or-questions-title" 
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "request-for-comments-rationale",
+          "angularLogic": "*ngIf=\"!smsSendComplete && !httpError\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "thank-you-rationale",
+          "angularLogic": "*ngIf=\"smsSendComplete && !httpError\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "rationale-component",
+          "className": "error-rationale",
+          "angularLogic": "*ngIf=\"httpError\""
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "mat-form-button",
+          "label": "Submit",
+          "className": "sms-send",
+          "disabled": "formInvalid",
+          "click": "onclickSubmit()"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "mat-text-field",
+          "className": "sms-email",
+          "placeholder": "Required",
+          "type": "email",
+          "value": "",
+          "required": "true",
+          "formControl": "contactFormControl"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "controlType": "mat-text-area",
+          "className": "sms-message",
+          "label": "Comments or Questions",
+          "placeholder": "Required",
+          "type": "text",
+          "value": "",
+          "required": "true",
+          "maxLength": 1000,
+          "rows": 5,
+          "formControl": "messageFormControl"
+        },
+        {
+          "enabled": true,
+          "translate": true,
+          "override": false,
+          "controlType": "mat-button-toggle-group",
+          "className": "email-phone-toggle",
+          "ngModel": "contactBy",
+          "vertical": "false"
+        },
+        {
+          "enabled": true,
+          "controlType": "page-element-classlist-add",
+          "classList": ["w3-animate-zoom"],
+          "className": "ui-expanding-container"
+        }, 
+        {
+          "enabled": true,
+          "controlType": "animated-gif",
+          "className": "side-animation",
+          "filePath": "img/side-animation.png",
+          "replacement": "side-thing-background"
+        }
+      ],
+      "editsAndAdditions": [
+        {
+          "enabled": true,
+          "controlType": "replace-property-in-css-recursive",
+          "remove": "  background-color",
+          "addition": "  background-color: var(--background-color);"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "contact",
+          "remove": "width"
+        },
+        {
+          "enabled": true,
+          "controlType": "add-properties-to-class",
+          "className": "contact",
+          "addition": "top: 72px;"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "side-animation",
+          "remove": "left"
+        },
+        {
+          "enabled": true,
+          "controlType": "remove-properties-from-class",
+          "className": "side-animation",
+          "remove": "top"
+        }
+      ]
+    }
+  ]
+}

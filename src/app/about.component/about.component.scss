@@ -1,0 +1,321 @@
+/* screen - about */
+
+.about {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 81px;
+  height: 2289px;
+   margin-top: 75px;
+}
+
+.about .ui-expanding-container-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-left: 115px;
+  margin-top: 65px;
+  position: relative;
+  width: 980px;
+}
+
+.about .ui-expanding-container-text-item {
+  align-self: stretch;
+  height: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.about .company-profile-title {
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 946px;
+}
+
+.about .text {
+  line-height: 27.5px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.about .company-profile-rationale {
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.about .text-1 {
+  align-self: stretch;
+  line-height: 20px;
+  width: 960px;
+}
+
+.about .span1 {
+  font-family: var(--font-family-roboto-bold);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.about .spacer {
+  align-self: stretch;
+  height: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.about .ai-strategies-title {
+  left: 12px;
+  top: 1px;
+  width: 947px;
+}
+
+.about .ai-strategies-rationale {
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 970px;
+}
+
+.about .ai-strategies-rationale-image {
+  height: 367px;
+  object-fit: cover;
+  position: relative;
+  width: 458px;
+}
+
+.about .ai-strategies-rationale-text {
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-right: -5.00px;
+  position: relative;
+  width: 487px;
+}
+
+.about .automation-title {
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 948px;
+}
+
+.about .automation-rationale {
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.about .span1-1 {
+  font-family: var(--font-family-roboto-extrabold);
+  font-weight: 800;
+}
+
+.about .spacer-2 {
+  align-self: stretch;
+  height: 38px;
+  position: relative;
+  width: 100%;
+}
+
+.about .integration-title {
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 949px;
+}
+
+.about .integration-rationale {
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.about .spacer-1 {
+  align-self: stretch;
+  height: 36px;
+  position: relative;
+  width: 100%;
+}
+
+.about .innovation-title {
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 950px;
+}
+
+.about .innovation-rationale {
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.about .courses-title {
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 951px;
+}
+
+.about .courses-rationale {
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.about .spacer-3 {
+  align-self: stretch;
+  height: 37px;
+  position: relative;
+  width: 100%;
+}
+
+.about .founder-cto {
+  align-self: stretch;
+  height: 51px;
+  padding: 0px 10px;
+  position: relative;
+  width: 100%;
+}
+
+.about .headshot-1 {
+  height: 65px;
+  margin-bottom: -7.00px;
+  margin-top: -7.00px;
+  object-fit: cover;
+  position: relative;
+  width: 65px;
+}
+
+.about .founder-title {
+  left: 94px;
+  position: absolute;
+  top: 11px;
+  width: 864px;
+}
+
+.about .spacer-4 {
+  align-self: stretch;
+  height: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.about .founder-cto-rationale {
+  align-items: center;
+  background-color: var(--background-color);
+  display: inline-flex;
+  gap: 10px;
+  height: 20px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+}
+
+.about .text-3 {
+  align-self: stretch;
+  line-height: 20px;
+  white-space: nowrap;
+  width: 960px;
+}
+
+.about .spacer-5 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 10px 0px 9px;
+  position: relative;
+}
+
+.about .text-2 {
+  line-height: 20px;
+  width: 960px;
+}
+
+.about .span-1 {
+  text-decoration: underline;
+}
+
+.about .spacer-6 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 10px;
+  position: relative;
+  width: 980px;
+}
+
+.about .side-animation {
+  height: 854px;
+  object-fit: cover;
+  position: relative;
+  width: 264px;
+}
+
+.about .ai-strategies {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.about .automation {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.about .company-profile {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.about .courses {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.about .founder {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.about .innovation {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.about .integration {
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.about .span1-2 {
+  color: var(--app-text-color);
+  font-size: var(--font-size-m);
+}
+
+.about .text-4 {
+  letter-spacing: 0;
+  margin-top: -1.00px;
+  position: relative;
+}

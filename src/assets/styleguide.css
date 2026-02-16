@@ -1,0 +1,160 @@
+:root { 
+  --accent-color: #044472;
+  --app-text-color: #49454f;
+  --background-color: #fcfcfe;
+  --black: #000000;
+  --bon-jour: #e0dfe0;
+  --color-accent-100: #b1c5d3;
+  --color-accent-200: #8ca9be;
+  --color-accent-300: #5782a0;
+  --color-accent-400: #36698d;
+  --color-accent-50: #e6ecf1;
+  --color-accent-500: #044471;
+  --color-accent-600: #043e67;
+  --color-accent-700: #033050;
+  --color-accent-800: #02253e;
+  --color-accent-900: #021d2f;
+  --color-app-text-dark: #d9d9d9;
+  --color-app-text-light: #49454f;
+  --color-background-dark: #1c1c1c;
+  --color-background-light: #fcfcfc;
+  --color-ctl-backgnd-dark: #424242;
+  --color-ctl-backgnd-light: #f5f5f5;
+  --color-ctl-selected-dark: #212121;
+  --color-ctl-selected-light: #e0e0e0;
+  --color-ctl-text-dark: #a6a6a6;
+  --color-ctl-text-light: #49454f;
+  --color-ctl-unselected-dark: #424242;
+  --color-ctl-unselected-light: #ffffff;
+  --color-primary-100: #b1d5e7;
+  --color-primary-200: #8cc1dc;
+  --color-primary-300: #57a5cb;
+  --color-primary-400: #3694c1;
+  --color-primary-50: #e6f2f7;
+  --color-primary-500: #0479b2;
+  --color-primary-600: #046ea2;
+  --color-primary-700: #03567e;
+  --color-primary-800: #024362;
+  --color-primary-900: #02334b;
+  --congress-blue: #004a7f;
+  --ctl-backgnd-color: #f5f5f6;
+  --ctl-selected-color: #e0dfe1;
+  --ctl-text-color: #49454e;
+  --ctl-unselected-color: #f8f8f8;
+  --m3syslightoutline: #79747e;
+  --manatee: #8e98a8;
+  --midnight: #02142c;
+  --pale-slate: #c3c3c4;
+  --pale-slate-2: #c3c3c3;
+  --primary-color: #0479b1;
+  --romance: #fffffd;
+  --romance-2: #fffffc;
+  --selago: #e9ebf8;
+  --white: #ffffffcc;
+  --white-2: #fffffe;
+ 
+  --font-size-l: 24px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 32px;
+  --font-size-xs: 10px;
+  --font-size-xxs: 8px;
+  --font-size-xxxs: 6px;
+ 
+  --font-family-cute_font: "Cute Font", Helvetica;
+  --font-family-digital_numbers-regular: "Digital Numbers-Regular", Helvetica;
+  --font-family-inter-medium: "Inter-Medium", Helvetica;
+  --font-family-inter-regular: "Inter-Regular", Helvetica;
+  --font-family-neuropol-regular: "Neuropol-Regular", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+  --font-family-roboto-bold: "Roboto-Bold", Helvetica;
+  --font-family-roboto-extrabold: "Roboto-ExtraBold", Helvetica;
+  --font-family-roboto-medium: "Roboto-Medium", Helvetica;
+}
+.roboto-normal-gravel-16px {
+  color: var(--app-text-color);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-regular-normal-black-8px {
+  color: var(--black);
+  font-family: var(--font-family-inter-regular);
+  font-size: var(--font-size-xxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-regular-normal-manatee-10px {
+  color: var(--manatee);
+  font-family: var(--font-family-inter-regular);
+  font-size: var(--font-size-xs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-regular-normal-black-6px {
+  color: var(--black);
+  font-family: var(--font-family-inter-regular);
+  font-size: var(--font-size-xxxs);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-medium-black-14px {
+  color: var(--black);
+  font-family: var(--font-family-inter-medium);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.neuropol-regular-normal-deep-cerulean-24px {
+  color: var(--primary-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.neuropol-regular-normal-gravel-14px {
+  color: var(--app-text-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-normal-black-16px {
+  color: var(--black);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.neuropol-regular-normal-deep-cerulean-20px {
+  color: var(--primary-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.neuropol-regular-normal-selago-20px {
+  color: var(--selago);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.neuropol-regular-normal-deep-cerulean-32px {
+  color: var(--primary-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}

@@ -1,0 +1,146 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+@import "assets/styleguide.css";
+@import "assets/globals.css";
+@import "assets/mat-controls.scss";
+
+$app-theme: mat.define-theme(
+  (
+    color: (
+      use-system-variables: true
+    ),
+    typography: (
+      use-system-variables: true
+    ),
+  )
+);
+
+:root {
+  @include mat.all-component-themes($app-theme);
+  @include mat.system-level-colors($app-theme);
+  @include mat.system-level-typography($app-theme);
+}
+
+@import "./mat-light-theme.scss";
+@import "./mat-dark-theme.scss";
+
+.app-light-theme { 
+  --background-color: var(--color-background-light);
+  --primary-color: var(--color-primary-500);
+  --accent-color: var(--color-accent-500);    
+  --app-text-color: var(--color-app-text-light);
+  --ctl-backgnd-color: var(--color-ctl-backgnd-light);
+  --ctl-text-color: var(--color-ctl-text-light);
+  --ctl-selected-color: var(--color-ctl-selected-light);
+  --ctl-unselected-color: var(--color-ctl-unselected-light);
+  body {
+    margin: 0;
+    background-color: var(--color-background-light);
+  }
+}
+
+.app-dark-theme { 
+  --background-color: var(--color-background-dark);
+  --primary-color: var(--color-primary-300);
+  --accent-color: var(--color-accent-300);
+  --app-text-color: var(--color-app-text-dark);
+  --ctl-backgnd-color: var(--color-ctl-backgnd-dark);
+  --ctl-text-color: var(--color-ctl-text-dark);
+  --ctl-selected-color: var(--color-ctl-selected-dark);
+  --ctl-unselected-color: var(--color-ctl-unselected-dark);
+  body {
+    margin: 0;
+    background-color: var(--color-background-dark);
+  }
+}
+
+.side-animation-model-light {
+  position: fixed !important;
+  right: 0 !important;
+  background-image: url('./img/side-thing-background-light.gif');
+}
+
+.side-animation-model-dark {
+  position: fixed !important;
+  right: 0 !important;
+  background-image: url('./img/side-thing-background-dark.gif');
+}
+
+.landing-background-model-light {
+  background-image: url('./img/landing-background-light.gif');
+}
+
+.landing-background-model-dark {
+  background-image: url('./img/landing-background-dark.gif');
+}
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadIn 1s;
+}
+
+.slow-fade-in {
+  animation: fadIn 3s;
+}
+
+@keyframes fadIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadOut 1s;
+}
+
+@keyframes fadOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.w3-animate-zoom {
+  animation:animatezoom 1.5s;
+}
+
+@keyframes animatezoom{
+  from{
+    transform:scale(0);
+  }
+   to{
+    transform:scale(1);
+  }
+}
+
+// How to change the Angular material theme in just 5 minutes: https://www.youtube.com/watch?v=NugqJxFYmDM
+// https://mui.com/material-ui/customization/color/
+
+// Creating a Color System in Figma: https://www.youtube.com/watch?v=ZHhFWIq-viQ&list=PLhRgbW9G_5c8Il3YdZKdMRoLdGOOVCVpE&index=9&t=684s
+// How do you create an angular material theme using ONLY hex values: https://stackoverflow.com/questions/60062302/how-do-you-create-an-angular-material-theme-using-only-hex-values
+
+// How To Make A Dark Theme Toggle In Angular Tutorial
+// https://www.youtube.com/watch?v=0tSvBgAgi9M&t=2s
+

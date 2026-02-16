@@ -1,0 +1,19 @@
+<div class="container-center-horizontal">
+  <div class="home screen">
+    <div class="w3-animate-zoom top-title zoom-title" *ngIf="showTopTitle" >{{appServices.getTranslation("top-title")}}</div>
+    <div class="landing-background" [ngClass]="appServices.darkMode ? 'landing-background-model-dark' : 'landing-background-model-light'"></div>
+    <div class="w3-animate-zoom welcome-conditional-text rationale-component" *ngIf="showWelcomeText" >
+      <p class="text text-2 roboto-normal-gravel-16px">Introducing ProMatrix Innovative Solutions… Here you will find AI solutions for your entire enterprise!<br><br>Most software projects just take too long to develop! That is because there is a lack of integration between design and development. There should be not gaps, but in fact there are huge gaps!</p>
+    </div>
+    <div class="w3-animate-zoom middle-title neuropol-regular-normal-deep-cerulean-32px zoom-title" *ngIf="showMiddleTitle" >The future of AI Development</div>
+    <div class="w3-animate-zoom bottom-title neuropol-regular-normal-deep-cerulean-32px zoom-title" *ngIf="showBottomTitle" >by Bridging Technologies</div>
+    <div class="w3-animate-zoom more-info-conditional-text rationale-component" *ngIf="showMoreInfoText" ><p class="text text-2 roboto-normal-gravel-16px">Discover a design system that can easily produce quality software applications that come with all thebenefits of AI.<br><br>Transform designs into applications that support multiple languages, supportaccessibility concerns while enabling voice commands.<br><br>ProMatrix brings it all together with AI,automation, integration and innovation.</p></div>
+    <div class="w3-animate-zoom chatbot-title neuropol-regular-normal-deep-cerulean-32px zoom-title" *ngIf="showChatbotTitle" >Welcome to the Chatbot Talk Show</div>
+    <div class="w3-animate-zoom chatbot-info-conditional-text rationale-component" *ngIf="showChatbotInfoText" ><p class="text-1 text-2 roboto-normal-gravel-16px"><span class="roboto-normal-gravel-16px">Click on the image of the Chatbot Talk Show for the video demo. The Chatbot Talk Show is a proof ofconcept on how to test a chatbot by using another chatbot. The unique part about this design is that itintegrates with speech technologies for a more natural conversation. The video is titled: Testing Chatbotsusing Chatbots with Google Dialogflow CX.<br>The Chatbot Talk Show has 3 modes of operation to test&amp; exercise chatbots:  ○ Chatbot Host to Human Guest   ○ Human Host to Chatbot Guest   ○ Chatbot Hostto Chatbot Guest<br><br>Following are the Chatbot Talk Show features:<br> ○ Integration with the Application   ○ Integrated Voice Response (IVR) without Telephony   ○ Real-timeOperation   ○ Full Duplex   ○ Voice Selection  ○ Different Testing Modes   ○ DialogFlow MessengerIntegration<br><br>Following are the Chatbot Talk Show future enhancements:<br>  ○ Group Discussions  ○ Language Translations   ○ Time Travel   ○ Different Interactive Games&nbsp;&nbsp; ○ InteractiveLessons and Training</span></p></div>
+    <div class="ui-expanding-row">
+      <div class="spacer">
+        <button class="more-information-button mat-button" [disabled]="false" (click)="appServices.pageToDisplay = 'SHOWCASE'" mat-flat-button [ngClass]="classByDisabled" title="">&nbsp;&nbsp;More Information&nbsp;&nbsp;</button>
+      </div>
+    </div>
+  </div>
+</div>

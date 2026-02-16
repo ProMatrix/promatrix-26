@@ -1,0 +1,190 @@
+.show-chatbot-toggle-button {
+  text-align: right;
+}
+
+.guest-speech-toggle-button {
+  text-align: right;
+}
+
+.guest-opening-toggle-button {
+  text-align: right;
+}
+
+.html-textarea {
+  resize: none;
+  color: var(--app-text-color);
+}
+
+app-footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+app-settings {
+  position: fixed;
+  left: 30px;
+  top: 125px;
+  z-index: 99;
+}
+
+.rationale-component {
+  p {
+    margin-top: 0;
+    cursor: default;
+  }
+}
+
+.zoom-title {
+  cursor: default;
+}
+
+.mat-mdc-option {
+  font-family: Roboto, Helvetica !important;
+}
+
+.container-center-horizontal {
+  display: initial;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+  font-family: Roboto, Helvetica !important;
+}
+
+.mat-text-field {
+    border-bottom-style: initial !important;
+    border-bottom-width: initial !important;
+    border-color: initial !important;
+    border-radius: initial !important;
+    overflow: hidden !important;
+    height: 76px !important;
+    resize: none;
+  }
+
+  .mat-text-area {
+    background-color: initial !important;
+    border-bottom-style: initial !important;
+    border-bottom-width: initial !important;
+    border-color: initial !important;
+    border-radius: initial !important;
+    height: auto !important;
+    max-height: 200px;
+  }
+  
+  .mat-select {
+    display: initial !important;
+  }
+
+  .mat-button-toggle-group {
+    width: auto !important;
+    height: 42px !important;
+    font-family: roboto !important;
+  }
+
+  .mat-slide-toggle {
+    font-family: roboto !important;
+    height: initial !important;
+  }
+
+  .mat-tab-group {
+    font-family: initial !important;
+  }
+  
+  .mat-button {
+    font-family: roboto !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+    color: var(--ctl-backgnd-color) !important;
+    width: auto !important;
+    background-color: var(--primary-color) !important;
+  }
+
+  .mat-button-enabled {
+    font-family: roboto !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+    color: var(--ctl-backgnd-color) !important;
+    width: auto !important;
+    background-color: var(--primary-color) !important;
+  }
+
+  .mat-button-disabled {
+    font-family: roboto !important;
+    font-size: 24px !important;
+    cursor: pointer !important;
+    color: var(--ctl-text-color) !important;
+    width: auto !important;
+    background-color: var(--ctl-selected-color) !important;
+  }
+
+  .show-chatbot {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+  }
+  
+  .hide-chatbot {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .home-link-unselected {
+    cursor: pointer;
+  }
+
+  .home-link-selected {
+    cursor: default;
+  }
+
+  .nav-link-unselected {
+    font-family: roboto !important;
+    font-size: 24px !important;
+    width: initial !important;
+    cursor: pointer !important;
+  }
+
+  .nav-link-selected {
+    font-family: roboto !important;
+    font-size: 24px !important; 
+    background-color: var(--primary-color) !important;
+    color: var(--background-color) !important;
+    width: initial !important;
+    cursor: default !important;
+  }
+
+  .mat-date-picker {
+    // align-items: initial !important;
+    // background-color: initial !important;
+    // border-bottom-style: initial !important;
+    // border-bottom-width: initial !important;
+    // border-color: initial !important;
+    // border-radius: initial !important;
+    // display: initial !important;
+    // overflow: initial !important;
+    // padding: initial !important;
+    // height: auto !important;  
+  }
+
+  .mat-date-range-picker {
+    // align-items: initial !important;
+    // background-color: initial !important;
+    // border-bottom-style: initial !important;
+    // border-bottom-width: initial !important;
+    // border-color: initial !important;
+    // border-radius: initial !important;
+    // display: initial !important;
+    // overflow: initial !important;
+    // padding: initial !important;
+    // height: auto !important;
+  }
+
+  .component-container {
+    top: -50px !important;
+    left: 40px !important;
+  }
+

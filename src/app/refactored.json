@@ -1,0 +1,558 @@
+{
+  "pages": [
+    {
+      "enabled": true,
+      "pageName": "contact",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "mat-text-area",
+          "className": "sms-message",
+          "label": "Comments or Questions",
+          "words": {
+            "language": "EN",
+            "value": "Comments or Questions"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-button-toggle-group",
+          "className": "email-phone-toggle",
+          "words": null,
+          "childControls": [
+            {
+              "label": "Email",
+              "words": {
+                "language": "EN",
+                "value": "Email"
+              }
+            },
+            {
+              "label": "Phone",
+              "words": {
+                "language": "EN",
+                "value": "Phone"
+              }
+            }
+          ]
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-form-button",
+          "className": "sms-send",
+          "label": "Submit",
+          "words": {
+            "language": "EN",
+            "value": "Submit"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "thank-you-rationale",
+          "label": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eThank you for your interest in ProMatrix! We are looking forward to exploring your software developmentstrategy and assist in giving you the competative anvantage.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eThank you for your interest in ProMatrix! We are looking forward to exploring your software developmentstrategy and assist in giving you the competative anvantage.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "error-rationale",
+          "label": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eError: There was an problem during transmission to the server. Please try later!\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eError: There was an problem during transmission to the server. Please try later!\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "comments-or-questions-title",
+          "label": "Comments Or Questions?",
+          "words": {
+            "language": "EN",
+            "value": "Comments Or Questions?"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "mat-text-field",
+          "className": "sms-email",
+          "label": "Email or Phone",
+          "words": {
+            "language": "EN",
+            "value": "Email or Phone"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "request-for-comments-rationale",
+          "label": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eProMatrix offers a rapid approach to software development, providing low-cost, low-code solutions fromdesign to deployment. Their offerings include integration with AI, multiple languages, help desks, andcontact centers, alongside compatibility with major services like GCP, Azure, and AWS.\u003cbr\u003e\u003cbr\u003eIfyou\u0026#39;re seeking consultation on software development, enterprise architecture, or AI solutions, ProMatrixinvites you to explore their consulting options and scheduling availability.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text roboto-normal-gravel-16px\"\u003eProMatrix offers a rapid approach to software development, providing low-cost, low-code solutions fromdesign to deployment. Their offerings include integration with AI, multiple languages, help desks, andcontact centers, alongside compatibility with major services like GCP, Azure, and AWS.\u003cbr\u003e\u003cbr\u003eIfyou\u0026#39;re seeking consultation on software development, enterprise architecture, or AI solutions, ProMatrixinvites you to explore their consulting options and scheduling availability.\u003c/p\u003e"
+          }
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "pageName": "home",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "mat-button",
+          "className": "more-information-button",
+          "label": "More Information",
+          "words": {
+            "language": "EN",
+            "value": "More Information"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "zoom-title",
+          "className": "top-title",
+          "label": "Innovative Solutions",
+          "words": {
+            "language": "EN",
+            "value": "Innovative Solutions"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "welcome-conditional-text",
+          "label": "\u003cp class=text text-2 roboto-normal-gravel-16px\u003eIntroducing ProMatrix Innovative Solutions… Here you will find AI solutions for your entire enterprise!\u003cbr\u003e\u003cbr\u003eMostsoftware projects just take too long to develop! That is because there is a lack of integration betweendesign and development. There should be not gaps, but in fact there are huge gaps!\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text text-2 roboto-normal-gravel-16px\"\u003eIntroducing ProMatrix Innovative Solutions… Here you will find AI solutions for your entire enterprise!\u003cbr\u003e\u003cbr\u003eMostsoftware projects just take too long to develop! That is because there is a lack of integration betweendesign and development. There should be not gaps, but in fact there are huge gaps!\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "zoom-title",
+          "className": "middle-title",
+          "label": "The future of AI Development",
+          "words": {
+            "language": "EN",
+            "value": "The future of AI Development"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "zoom-title",
+          "className": "bottom-title",
+          "label": "by Bridging Technologies",
+          "words": {
+            "language": "EN",
+            "value": "by Bridging Technologies"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "more-info-conditional-text",
+          "label": "\u003cp class=\"text text-2 roboto-normal-gravel-16px\"\u003eDiscover a design system that can easily produce quality software applications that come with all thebenefits of AI.\u003cbr\u003e\u003cbr\u003eTransform designs into applications that support multiple languages, supportaccessibility concerns while enabling voice commands.\u003cbr\u003e\u003cbr\u003eProMatrix brings it all together with AI,automation, integration and innovation.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text text-2 roboto-normal-gravel-16px\"\u003eDiscover a design system that can easily produce quality software applications that come with all thebenefits of AI.\u003cbr\u003e\u003cbr\u003eTransform designs into applications that support multiple languages, supportaccessibility concerns while enabling voice commands.\u003cbr\u003e\u003cbr\u003eProMatrix brings it all together with AI,automation, integration and innovation.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "zoom-title",
+          "className": "chatbot-title",
+          "label": "Welcome to the Chatbot Talk Show",
+          "words": {
+            "language": "EN",
+            "value": "Welcome to the Chatbot Talk Show"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "chatbot-info-conditional-text",
+          "label": "\u003cp class=\"text-1 text-2 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"\u003eClick on the image of the Chatbot Talk Show for the video demo. The Chatbot Talk Show is a proof ofconcept on how to test a chatbot by using another chatbot. The unique part about this design is that itintegrates with speech technologies for a more natural conversation. The video is titled: Testing Chatbotsusing Chatbots with Google Dialogflow CX.\u003cbr\u003eThe Chatbot Talk Show has 3 modes of operation to test\u0026amp; exercise chatbots:  ○ Chatbot Host to Human Guest   ○ Human Host to Chatbot Guest   ○ Chatbot Hostto Chatbot Guest\u003cbr\u003e\u003cbr\u003eFollowing are the Chatbot Talk Show features:\u003cbr\u003e ○ Integration with the Application   ○ Integrated Voice Response (IVR) without Telephony   ○ Real-timeOperation   ○ Full Duplex   ○ Voice Selection  ○ Different Testing Modes   ○ DialogFlow MessengerIntegration\u003cbr\u003e\u003cbr\u003eFollowing are the Chatbot Talk Show future enhancements:\u003cbr\u003e  ○ Group Discussions  ○ Language Translations   ○ Time Travel   ○ Different Interactive Games\u0026nbsp;\u0026nbsp; ○ InteractiveLessons and Training\u003c/span\u003e\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-2 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"\u003eClick on the image of the Chatbot Talk Show for the video demo. The Chatbot Talk Show is a proof ofconcept on how to test a chatbot by using another chatbot. The unique part about this design is that itintegrates with speech technologies for a more natural conversation. The video is titled: Testing Chatbotsusing Chatbots with Google Dialogflow CX.\u003cbr\u003eThe Chatbot Talk Show has 3 modes of operation to test\u0026amp; exercise chatbots:  ○ Chatbot Host to Human Guest   ○ Human Host to Chatbot Guest   ○ Chatbot Hostto Chatbot Guest\u003cbr\u003e\u003cbr\u003eFollowing are the Chatbot Talk Show features:\u003cbr\u003e ○ Integration with the Application   ○ Integrated Voice Response (IVR) without Telephony   ○ Real-timeOperation   ○ Full Duplex   ○ Voice Selection  ○ Different Testing Modes   ○ DialogFlow MessengerIntegration\u003cbr\u003e\u003cbr\u003eFollowing are the Chatbot Talk Show future enhancements:\u003cbr\u003e  ○ Group Discussions  ○ Language Translations   ○ Time Travel   ○ Different Interactive Games\u0026nbsp;\u0026nbsp; ○ InteractiveLessons and Training\u003c/span\u003e\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "html-element",
+          "className": "chatbot-talkshow-ctrl",
+          "words": {
+            "language": "EN"
+          }
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "pageName": "app",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "nav-button-link",
+          "className": "prototype-nav-link",
+          "label": "PROTOTYPES",
+          "words": {
+            "language": "EN",
+            "value": "PROTOTYPES"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "nav-button-link",
+          "className": "showcase-nav-link",
+          "label": "SHOWCASE",
+          "words": {
+            "language": "EN",
+            "value": "SHOWCASE"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "nav-button-link",
+          "className": "about-nav-link",
+          "label": "ABOUT US",
+          "words": {
+            "language": "EN",
+            "value": "ABOUT US"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "nav-button-link",
+          "className": "contact-nav-link",
+          "label": "CONTACT",
+          "words": {
+            "language": "EN",
+            "value": "CONTACT"
+          }
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "pageName": "showcase",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "template-title",
+          "label": "\u003cdiv class=\"text text-6 neuropol-regular-normal-deep-cerulean-24px\"\u003eAI Help System\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-6 neuropol-regular-normal-deep-cerulean-24px\"\u003eAI Help System\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "project-templates-rationale",
+          "label": "\u003cp class=\"text-1 text-3 roboto-normal-onyx-16px\"\u003eProMatrix offers Project Templates to kick-start your new project development. The Project templates haveall the scaffolding for a new project. This includes a landing page, header, footer, contact page, aboutpage, and showcase page. The projects are ready to deploy using the latest version ofAngular.\u0026nbsp;\u0026nbsp;The project templates use well tested software patterns for different scenarios, andare created to allow easy customization. \u003cbr\u003e\u003cbr\u003eThere are a few variants of the project template thatwill give you more features and options. These variants include state management, routing, featurelibraries, and testing. Other variants include environments to build for (dev, prod, stage) and theapplication pages.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-3 roboto-normal-onyx-16px\"\u003eProMatrix offers Project Templates to kick-start your new project development. The Project templates haveall the scaffolding for a new project. This includes a landing page, header, footer, contact page, aboutpage, and showcase page. The projects are ready to deploy using the latest version ofAngular.\u0026nbsp;\u0026nbsp;The project templates use well tested software patterns for different scenarios, andare created to allow easy customization. \u003cbr\u003e\u003cbr\u003eThere are a few variants of the project template thatwill give you more features and options. These variants include state management, routing, featurelibraries, and testing. Other variants include environments to build for (dev, prod, stage) and theapplication pages.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eProMatrix AI Strategies\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eProMatrix AI Strategies\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-rationale",
+          "label": "\u003cp class=\"text-1 text-2 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eHere is a few of ProMatrix Strategies that are already in production with 100% success. It\u0026#39;s  amazing how much time and resources can be saved with automation, integration and Artifical  Intelligence.\u003cbr\u003e\u003cbr\u003eThese strategies were built on Google\u0026#39;s AI services and APIs, and were  implemented using DialogFlox CX with the LLM was chosen from Google’s Model Garden. \u003c/span\u003e\u003cspan class=\"span1\"\u003eVideo: Software Development Strategy\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-2 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eHere is a few of ProMatrix Strategies that are already in production with 100% success. It\u0026#39;s  amazing how much time and resources can be saved with automation, integration and Artifical  Intelligence.\u003cbr\u003e\u003cbr\u003eThese strategies were built on Google\u0026#39;s AI services and APIs, and were  implemented using DialogFlox CX with the LLM was chosen from Google’s Model Garden. \u003c/span\u003e\u003cspan class=\"span1\"\u003eVideo: Software Development Strategy\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "chatmate-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eChatMate Integration\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eChatMate Integration\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "chatmate-rationale-text",
+          "label": "The motivation for designing ChatMate was to offer a low-cost solution for integrating a chatbot directlyinto the application frame.\u003cbr\u003e\u003cbr\u003eAnd then top it off with voice-activated commands and you willapproach the future faster with more clarity.\u003cbr\u003e\u003cbr\u003eThe integration is simpler than most becaus e ofit uses DialogFlow CX and the LLMs that are part of the Google’s Model Garden.\u003cbr\u003e\u003cbr\u003eIt automaticallysolves customer issues with safe, accurate, conversational answers based solely on your support content.Customer care is the heart of any organization. \u003cbr\u003e\u003cbr\u003eChatMate offers multiple agents and reusable dialog flow throughout your enterprise.",
+          "words": {
+            "language": "EN",
+            "value": "The motivation for designing ChatMate was to offer a low-cost solution for integrating a chatbot directlyinto the application frame.\u003cbr\u003e\u003cbr\u003eAnd then top it off with voice-activated commands and you willapproach the future faster with more clarity.\u003cbr\u003e\u003cbr\u003eThe integration is simpler than most becaus e ofit uses DialogFlow CX and the LLMs that are part of the Google’s Model Garden.\u003cbr\u003e\u003cbr\u003eIt automaticallysolves customer issues with safe, accurate, conversational answers based solely on your support content.Customer care is the heart of any organization. \u003cbr\u003e\u003cbr\u003eChatMate offers multiple agents and reusable dialog flow throughout your enterprise."
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "smart-build-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eSmart Build for Translations\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eSmart Build for Translations\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "smart-build-rationale-text",
+          "label": "Smart Build is designed to streamline numerous software development tasks.\u003cbr\u003e\u003cbr\u003eA prime example isits ability to handle multiple language translations during the build process, allowing developers toimmediately see the results in action. This eliminates the need for real-time online translation, offeringsignificant cost savings by shifting translation tasks offline during the build phase.\u003cbr\u003e\u003cbr\u003eProMatrix introduces Smart Build specifically for enhancing translation processes in softwaredevelopment.",
+          "words": {
+            "language": "EN",
+            "value": "Smart Build is designed to streamline numerous software development tasks.\u003cbr\u003e\u003cbr\u003eA prime example isits ability to handle multiple language translations during the build process, allowing developers toimmediately see the results in action. This eliminates the need for real-time online translation, offeringsignificant cost savings by shifting translation tasks offline during the build phase.\u003cbr\u003e\u003cbr\u003eProMatrix introduces Smart Build specifically for enhancing translation processes in softwaredevelopment."
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "help-system-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eAI Help System\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eAI Help System\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "help-system-rationale-text",
+          "label": "Struggling with Support Overload?\u0026nbsp;\u0026nbsp;Let ProMatrix AI Help System handle your Help Desk usingDialogflow CX!\u003cbr\u003e\u003cbr\u003eReduced Costs:\u0026nbsp;\u0026nbsp;Lower support staff requirements and faster issueresolution lead to significant cost savings.\u003cbr\u003eImproved Customer Satisfaction:\u0026nbsp;\u0026nbsp;Fasterresponse times and 24/7 availability\u0026nbsp;\u0026nbsp;keep customers happy.\u003cbr\u003eIncreasedEfficiency:\u0026nbsp;\u0026nbsp;Free your team to focus on\u0026nbsp;\u0026nbsp;complex issues while AI handles routineinquiries.",
+          "words": {
+            "language": "EN",
+            "value": "Struggling with Support Overload?\u0026nbsp;\u0026nbsp;Let ProMatrix AI Help System handle your Help Desk usingDialogflow CX!\u003cbr\u003e\u003cbr\u003eReduced Costs:\u0026nbsp;\u0026nbsp;Lower support staff requirements and faster issueresolution lead to significant cost savings.\u003cbr\u003eImproved Customer Satisfaction:\u0026nbsp;\u0026nbsp;Fasterresponse times and 24/7 availability\u0026nbsp;\u0026nbsp;keep customers happy.\u003cbr\u003eIncreasedEfficiency:\u0026nbsp;\u0026nbsp;Free your team to focus on\u0026nbsp;\u0026nbsp;complex issues while AI handles routineinquiries."
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "hands-free-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eHands-Free Apps\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eHands-Free Apps\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "hands-free-rationale-text",
+          "label": "\u0026nbsp;\u0026nbsp;Ditch the Buttons! Control your world with your voice using our AI-powered hands-free systembuilt by ProMatrix with Dialogflow CX.\u003cbr\u003e\u003cbr\u003eVoice activated commands are the most important part ofHands-free application solutions.\u003cbr\u003e\u003cbr\u003eProMatrix offers the integration of Hand-Free Applicationsthat are relatively simple to implement, and because this is built with Dialogflow CX, it will:\u003cbr\u003eUnderstandsnatural language\u003cbr\u003eLearns your preferences\u003cbr\u003eWorks seamlessly with your other Hand-Free Applications",
+          "words": {
+            "language": "EN",
+            "value": "\u0026nbsp;\u0026nbsp;Ditch the Buttons! Control your world with your voice using our AI-powered hands-free systembuilt by ProMatrix with Dialogflow CX.\u003cbr\u003e\u003cbr\u003eVoice activated commands are the most important part ofHands-free application solutions.\u003cbr\u003e\u003cbr\u003eProMatrix offers the integration of Hand-Free Applicationsthat are relatively simple to implement, and because this is built with Dialogflow CX, it will:\u003cbr\u003eUnderstandsnatural language\u003cbr\u003eLearns your preferences\u003cbr\u003eWorks seamlessly with your other Hand-Free Applications"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "translation-agent-title",
+          "label": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eTranslation Agent\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-2 neuropol-regular-normal-deep-cerulean-24px\"\u003eTranslation Agent\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "translation-agent-rationale-text",
+          "label": "Break Language Barriers. Connect Instantly. Speak Different Languages? Speak Freely! Talk naturally, andbe understood in real-time.\u003cbr\u003e\u003cbr\u003eThis solution will allow 2 or more people to communicate through alanguage translation virtual agent, in real-time.\u003cbr\u003e\u003cbr\u003eThis system is perfect for internationalmeetings for business or personal.\u003cbr\u003e\u003cbr\u003eProMatrix offers the Translation Agent that is relativelysimple to implement, and integrate directly into your software application.",
+          "words": {
+            "language": "EN",
+            "value": "Break Language Barriers. Connect Instantly. Speak Different Languages? Speak Freely! Talk naturally, andbe understood in real-time.\u003cbr\u003e\u003cbr\u003eThis solution will allow 2 or more people to communicate through alanguage translation virtual agent, in real-time.\u003cbr\u003e\u003cbr\u003eThis system is perfect for internationalmeetings for business or personal.\u003cbr\u003e\u003cbr\u003eProMatrix offers the Translation Agent that is relativelysimple to implement, and integrate directly into your software application."
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "page-element-classlist-add",
+          "className": "translation-agent-rationale-image",
+          "words": {
+            "language": "EN"
+          }
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "pageName": "about",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "company-profile-rationale",
+          "label": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eProMatrix, founded in 2003 and based in Minneapolis, Minnesota, is a dedicated software engineering  firm focused on innovative software development. With fewer than ten employees who are all stakeholders,  \u003cbr\u003e\u003cbr\u003eProMatrix operates on a lean business model that minimizes inefficiencies. The company  specializes in developing cutting-edge solutions to streamline the creation of enterprise web  applications. \u003c/span\u003e\u003cspan class=\"span1 span1-2\"\u003eVideo: Software Development Strategy\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eProMatrix, founded in 2003 and based in Minneapolis, Minnesota, is a dedicated software engineering  firm focused on innovative software development. With fewer than ten employees who are all stakeholders,  \u003cbr\u003e\u003cbr\u003eProMatrix operates on a lean business model that minimizes inefficiencies. The company  specializes in developing cutting-edge solutions to streamline the creation of enterprise web  applications. \u003c/span\u003e\u003cspan class=\"span1 span1-2\"\u003eVideo: Software Development Strategy\u003c/span\u003e\u003c/a\u003e\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "founder-cto-rationale",
+          "label": "\u003cp class=\"text-3 text-4 roboto-normal-gravel-16px\"\u003eIntroducing David Donovan. He founded ProMatrix in 2003.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-3 text-4 roboto-normal-gravel-16px\"\u003eIntroducing David Donovan. He founded ProMatrix in 2003.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "company-profile-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eCompany Profile\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eCompany Profile\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "courses-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eCourses \u0026amp; Training\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eCourses \u0026amp; Training\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "courses-rationale",
+          "label": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eThe courses we offer are tailored to fit specific development strategies and schedules, focusing on bestpractices in AI, automation, integration, and testing. One such course, \u0026#34;Figma to AngularAutomation,\u0026#34; covers exporting controls, text, colors, fonts, and images for Angular Material.\u003cbr\u003e\u003cbr\u003eWe also provide training in Angular, NodeJS, and C#. Another course, \u0026#34;Angular PlatformDevelopment,\u0026#34; delves into best practices, reusable and sustainable design patterns, automation,testing for reliability and stress, and accessibility.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eThe courses we offer are tailored to fit specific development strategies and schedules, focusing on bestpractices in AI, automation, integration, and testing. One such course, \u0026#34;Figma to AngularAutomation,\u0026#34; covers exporting controls, text, colors, fonts, and images for Angular Material.\u003cbr\u003e\u003cbr\u003eWe also provide training in Angular, NodeJS, and C#. Another course, \u0026#34;Angular PlatformDevelopment,\u0026#34; delves into best practices, reusable and sustainable design patterns, automation,testing for reliability and stress, and accessibility.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eProMatrix AI Strategies\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eProMatrix AI Strategies\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "ai-strategies-rationale-text",
+          "label": "\u003cbr\u003eProMatrix AI Strategies are here to revolutionize your operations and propel you forward. Here\u0026#39;show AI can transform your business:\u003cbr\u003e\u003cbr\u003eBoost Efficiency: Automate repetitive tasks, freeing upyour team for strategic thinking.\u003cbr\u003eGain Insights: Uncover hidden patterns in your data for smarterdecision-making.\u003cbr\u003ePersonalize Experiences:\u0026nbsp;\u0026nbsp;Deliver targeted marketing and customer service,boosting satisfaction.\u003cbr\u003ePredict Trends:\u0026nbsp;\u0026nbsp;Stay ahead of the curve with AI-poweredforecasting.\u003cbr\u003eReduce Costs:\u0026nbsp;\u0026nbsp;Optimize processes and resources, leading to significantsavings.\u003cbr\u003e\u003cbr\u003eDon\u0026#39;t just compete, dominate. Embrace AI and unlock the future of your business.",
+          "words": {
+            "language": "EN",
+            "value": "\u003cbr\u003eProMatrix AI Strategies are here to revolutionize your operations and propel you forward. Here\u0026#39;show AI can transform your business:\u003cbr\u003e\u003cbr\u003eBoost Efficiency: Automate repetitive tasks, freeing upyour team for strategic thinking.\u003cbr\u003eGain Insights: Uncover hidden patterns in your data for smarterdecision-making.\u003cbr\u003ePersonalize Experiences:\u0026nbsp;\u0026nbsp;Deliver targeted marketing and customer service,boosting satisfaction.\u003cbr\u003ePredict Trends:\u0026nbsp;\u0026nbsp;Stay ahead of the curve with AI-poweredforecasting.\u003cbr\u003eReduce Costs:\u0026nbsp;\u0026nbsp;Optimize processes and resources, leading to significantsavings.\u003cbr\u003e\u003cbr\u003eDon\u0026#39;t just compete, dominate. Embrace AI and unlock the future of your business."
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "automation-rationale",
+          "label": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eWork Smarter, Not Harder. Automate Your Way to Success.\u003cbr\u003eFeeling Overwhelmed?\u0026nbsp;\u0026nbsp;Automation  can free you and your team to focus on what matters most.\u003cbr\u003eImagine: \u003cbr\u003eEffortless Tasks:  Repetitive processes handled automatically, saving valuable time.\u003cbr\u003eReduced Errors: Eliminate human  mistakes for a smoother workflow.\u003cbr\u003e24/7 Operations: Keep things running seamlessly, even outside  business hours.\u003cbr\u003eImproved Productivity: Get more done with less effort, boosting your bottom  line.\u003cbr\u003eData-Driven Decisions: Gain insights from automated tasks to optimize your strategy.\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003cspan class=\"span1-1 span1-2\"\u003eAutomation is for Businesses of All Sizes:\u003cbr\u003e\u003c/span\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eFrom streamlining marketing campaigns to managing inventory, automation delivers real results.\u003cbr\u003eStop  wasting time on tedious tasks.\u0026nbsp;\u0026nbsp;Start automating your way to success.\u003c/span\u003e\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eWork Smarter, Not Harder. Automate Your Way to Success.\u003cbr\u003eFeeling Overwhelmed?\u0026nbsp;\u0026nbsp;Automation  can free you and your team to focus on what matters most.\u003cbr\u003eImagine: \u003cbr\u003eEffortless Tasks:  Repetitive processes handled automatically, saving valuable time.\u003cbr\u003eReduced Errors: Eliminate human  mistakes for a smoother workflow.\u003cbr\u003e24/7 Operations: Keep things running seamlessly, even outside  business hours.\u003cbr\u003eImproved Productivity: Get more done with less effort, boosting your bottom  line.\u003cbr\u003eData-Driven Decisions: Gain insights from automated tasks to optimize your strategy.\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003cspan class=\"span1-1 span1-2\"\u003eAutomation is for Businesses of All Sizes:\u003cbr\u003e\u003c/span\u003e\u003cspan class=\"roboto-normal-gravel-16px\"  \u003eFrom streamlining marketing campaigns to managing inventory, automation delivers real results.\u003cbr\u003eStop  wasting time on tedious tasks.\u0026nbsp;\u0026nbsp;Start automating your way to success.\u003c/span\u003e\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "automation-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eAutomation\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eAutomation\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "integration-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eIntegration\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eIntegration\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "integration-rationale",
+          "label": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eStop the Silo Struggle! Unify Your Business with Integration.\u003cbr\u003eFeeling Disconnected? Fragmented dataand systems are slowing you down. Integration is the key to unlocking a seamless workflow.\u003cbr\u003eImagine:\u003cbr\u003eUnifiedSystems: All your business applications talking to each other, sharing data effortlessly.\u003cbr\u003eReal-TimeInsights: Make informed decisions with up-to-date information from all departments.\u003cbr\u003eEliminatedRedundancy: Say goodbye to double data entry and wasted time.\u003cbr\u003eImproved Efficiency: Streamlinedprocesses mean faster completion rates and happier employees.\u003cbr\u003eEnhanced Customer Experience: A unifiedview of your customer empowers better service.\u003cbr\u003eIntegration: The Power of Connection\u003cbr\u003eWhetherit\u0026#39;s CRM, ERP, or marketing tools, integration creates a unified ecosystem.\u003cbr\u003eDon\u0026#39;t let datasilos hold you back.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eStop the Silo Struggle! Unify Your Business with Integration.\u003cbr\u003eFeeling Disconnected? Fragmented dataand systems are slowing you down. Integration is the key to unlocking a seamless workflow.\u003cbr\u003eImagine:\u003cbr\u003eUnifiedSystems: All your business applications talking to each other, sharing data effortlessly.\u003cbr\u003eReal-TimeInsights: Make informed decisions with up-to-date information from all departments.\u003cbr\u003eEliminatedRedundancy: Say goodbye to double data entry and wasted time.\u003cbr\u003eImproved Efficiency: Streamlinedprocesses mean faster completion rates and happier employees.\u003cbr\u003eEnhanced Customer Experience: A unifiedview of your customer empowers better service.\u003cbr\u003eIntegration: The Power of Connection\u003cbr\u003eWhetherit\u0026#39;s CRM, ERP, or marketing tools, integration creates a unified ecosystem.\u003cbr\u003eDon\u0026#39;t let datasilos hold you back.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "innovation-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eInnovation\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eInnovation\u003c/div\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "innovation-rationale",
+          "label": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eInnovate or Evaporate. Stay Ahead with Bold Ideas.\u003cbr\u003eThe Business Landscape isRuthless.\u0026nbsp;\u0026nbsp;Don\u0026#39;t get left behind. Embrace innovation and become a leader.\u003cbr\u003eInnovation isthe key to:\u003cbr\u003eStanding Out:\u0026nbsp;\u0026nbsp;Develop unique products and services that capture customerattention.\u003cbr\u003eAdapting to Change:\u0026nbsp;\u0026nbsp;Future-proof your business by anticipating and respondingto industry shifts.\u003cbr\u003eFueling Growth: Innovation drives revenue and propels you ahead of thecompetition.\u003cbr\u003eAttracting Top Talent:\u0026nbsp;\u0026nbsp;Be a magnet for creative minds who want to pushboundaries.\u003cbr\u003eBoosting Morale:\u0026nbsp;\u0026nbsp;A culture of innovation fosters a dynamic and exciting workenvironment.\u003cbr\u003e\u003cbr\u003eInnovation Isn\u0026#39;t Just for Tech Giants:\u003cbr\u003eAny business can cultivate aninnovative spirit.\u0026nbsp;\u0026nbsp;We\u0026#39;ll help you unlock your potential.\u003cbr\u003eStop playing it safe. Startinnovating today.\u003c/p\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cp class=\"text-1 text-4 roboto-normal-gravel-16px\"\u003eInnovate or Evaporate. Stay Ahead with Bold Ideas.\u003cbr\u003eThe Business Landscape isRuthless.\u0026nbsp;\u0026nbsp;Don\u0026#39;t get left behind. Embrace innovation and become a leader.\u003cbr\u003eInnovation isthe key to:\u003cbr\u003eStanding Out:\u0026nbsp;\u0026nbsp;Develop unique products and services that capture customerattention.\u003cbr\u003eAdapting to Change:\u0026nbsp;\u0026nbsp;Future-proof your business by anticipating and respondingto industry shifts.\u003cbr\u003eFueling Growth: Innovation drives revenue and propels you ahead of thecompetition.\u003cbr\u003eAttracting Top Talent:\u0026nbsp;\u0026nbsp;Be a magnet for creative minds who want to pushboundaries.\u003cbr\u003eBoosting Morale:\u0026nbsp;\u0026nbsp;A culture of innovation fosters a dynamic and exciting workenvironment.\u003cbr\u003e\u003cbr\u003eInnovation Isn\u0026#39;t Just for Tech Giants:\u003cbr\u003eAny business can cultivate aninnovative spirit.\u0026nbsp;\u0026nbsp;We\u0026#39;ll help you unlock your potential.\u003cbr\u003eStop playing it safe. Startinnovating today.\u003c/p\u003e"
+          }
+        },
+        {
+          "enabled": true,
+          "controlType": "rationale-component",
+          "className": "founder-title",
+          "label": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eFounder\u003c/div\u003e",
+          "words": {
+            "language": "EN",
+            "value": "\u003cdiv class=\"text text-4 neuropol-regular-normal-deep-cerulean-24px\"\u003eFounder\u003c/div\u003e"
+          }
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "pageName": "prototype",
+      "pageControls": [
+        {
+          "enabled": true,
+          "controlType": "html-textarea",
+          "className": "chat-history-textarea",
+          "label": "Chat History",
+          "words": {
+            "language": "EN",
+            "value": "Chat History"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+/* screen - showcase */
+
+.showcase {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: flex;
+  gap: 50px;
+  height: 2232px;
+   margin-top: 75px;
+}
+
+.showcase .ui-expanding-container {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 134px;
+  margin-top: 81px;
+  position: relative;
+}
+
+.showcase .ui-expanding-container-item {
+  align-self: stretch;
+  height: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.showcase .ai-strategies-title {
+  align-items: center;
+  left: 12px;
+  top: 1px;
+  width: 940px;
+}
+
+.showcase .text {
+  line-height: 27.5px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.showcase .ai-strategies-rationale {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 992px;
+}
+
+.showcase .text-1 {
+  align-self: stretch;
+  line-height: 20px;
+  width: 953px;
+}
+
+.showcase .span1 {
+  color: var(--app-text-color);
+  font-family: var(--font-family-roboto-bold);
+  font-size: var(--font-size-m);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.showcase .spacer {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.showcase .frame-5 {
+  background-color: var(--background-color);
+  height: 50px;
+  position: relative;
+  width: 18px;
+}
+
+.showcase .chatmate-title {
+  align-items: center;
+  display: flex;
+  left: 12px;
+  top: 1px;
+  width: 941px;
+}
+
+.showcase .chatmate-rationale {
+  align-items: flex-start;
+  background-color: var(--background-color);
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 0px 10px;
+}
+
+.showcase .chatmate-rationale-text {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 550px;
+}
+
+.showcase .chatmate-rationale-image {
+  height: 319px;
+  object-fit: cover;
+  position: relative;
+  width: 410px;
+}
+
+.showcase .smart-build-title {
+  align-items: center;
+  left: 12px;
+  top: 1px;
+  width: 942px;
+}
+
+.showcase .smart-build-rationale {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.showcase .smart-build-rationale-image {
+  height: 239px;
+  object-fit: cover;
+  position: relative;
+  width: 343px;
+}
+
+.showcase .smart-build-rationale-text {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 600px;
+}
+
+.showcase .spacer-1 {
+  height: 71px;
+}
+
+.showcase .help-system-title {
+  align-items: center;
+  left: 12px;
+  top: 1px;
+  width: 943px;
+}
+
+.showcase .help-system-rationale {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.showcase .help-system-rationale-text {
+  height: 218px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 551px;
+}
+
+.showcase .help-system-rationale-image {
+  height: 265px;
+  object-fit: cover;
+  position: relative;
+  width: 395px;
+}
+
+.showcase .spacer-2 {
+  height: 63px;
+}
+
+.showcase .hands-free-title {
+  left: 12px;
+  top: 1px;
+  width: 944px;
+}
+
+.showcase .hands-free-rationale {
+  align-self: stretch;
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.showcase .hands-free-rationale-image {
+  height: 256px;
+  object-fit: cover;
+  position: relative;
+  width: 359px;
+}
+
+.showcase .hands-free-rationale-text {
+  align-self: stretch;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 601px;
+}
+
+.showcase .spacer-3 {
+  height: 74px;
+}
+
+.showcase .translation-agent-title {
+  align-items: center;
+  left: 12px;
+  top: 1px;
+  width: 945px;
+}
+
+.showcase .translation-agent-rationale {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--background-color);
+  flex: 0 0 auto;
+  padding: 0px 10px;
+  width: 100%;
+}
+
+.showcase .translation-agent-rationale-text {
+  height: 229px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 552px;
+}
+
+.showcase .translation-agent-rationale-image {
+  height: 289px;
+  object-fit: cover;
+  position: relative;
+  width: 410px;
+}
+
+.showcase .side-animation {
+  height: 854px;
+  object-fit: cover;
+  position: relative;
+  width: 264px;
+}
+
+.showcase .ai-strategies {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.showcase .chatmate {
+  gap: 10px;
+  position: relative;
+}
+
+.showcase .hands-free {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.showcase .help-system {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.showcase .smart-build {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.showcase .spacer-4 {
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+}
+
+.showcase .text-2 {
+  letter-spacing: 0;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.showcase .translation-agent {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}

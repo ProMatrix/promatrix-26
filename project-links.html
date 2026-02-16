@@ -1,0 +1,58 @@
+<style>
+  .myframe {
+    border-width: 0;
+    overflow: hidden;
+    transform: scale(0.5);
+    margin: -300px;
+    width: 1400px;
+    height: 1400px;
+  }
+</style>
+
+<script>
+  function startMeUp() {
+    const myFrame = window.frames[0];
+    myFrame.location.href = "http://localhost:4200";
+  }
+</script>
+
+
+<br><br>
+<table style="transform: scale(2.0); margin: 200px;">
+
+
+  <tr>
+    <td>
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 16 16"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M6.405 6.252L8 1l1.595 5.252H15l-4.373 3.4L12.25 15 8 11.695 3.75 15l1.623-5.348L1 6.252h5.405zM8 10.032l1.915 1.49-.731-2.41 1.915-1.49H8.732L8 5.214v4.82zm0-7.525zm5.652 4.215H9.28h4.372z"
+        />
+      </svg>
+    </td>
+    <td>
+      <a href="http://localhost:4200">LAUNCH APP: (development build)</a>
+      <br><br>
+      <a href="http://localhost:7777">LAUNCH DIST/APP: (either build)</a>
+      <br><br>
+      <a href="https://promatrix-us.web.app">LAUNCH FROM FIREBASE: (production build)</a>
+      <br><br>      
+      <a href="http://localhost:5000/promatrix-us/us-central1/helloWorld">CALL FUNCTION-HELLOWORLD: (locally)</a>
+      <br><br>
+      <a href="https://helloworld-i35rvlczaa-uc.a.run.app">CALL FUNCTION-HELLOWORLD: (remotely)</a>    
+      <br><br>    
+      <a href="javascript:void(0);" onclick="startMeUp()"
+        >localhost:4200: iFrame</a
+      >
+
+    </td>
+  </tr>
+</table>
+<iframe title="iframe" class="myframe" src=""></iframe>

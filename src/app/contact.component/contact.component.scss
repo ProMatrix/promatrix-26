@@ -1,0 +1,239 @@
+/* screen - contact */
+
+.contact {
+  background-color: var(--background-color);
+  height: 1080px;
+  position: relative;
+   top: 72px;
+}
+
+.contact .comments-or-questions-title {
+  color: var(--primary-color);
+  font-family: var(--font-family-neuropol-regular);
+  font-size: 28px;
+  font-weight: 400;
+  left: 212px;
+  letter-spacing: 0;
+  line-height: 25.2px;
+  position: absolute;
+  top: 64px;
+  white-space: nowrap;
+}
+
+.contact .error-rationale {
+  background-color: var(--background-color);
+  height: 76px;
+  left: 220px;
+  position: absolute;
+  top: 120px;
+  width: 791px;
+}
+
+.contact .text {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: -1px;
+  width: 791px;
+}
+
+.contact .thank-you-rationale {
+  background-color: var(--background-color);
+  height: 92px;
+  left: 220px;
+  position: absolute;
+  top: 120px;
+  width: 791px;
+}
+
+.contact .request-for-comments-rationale {
+  background-color: var(--background-color);
+  height: 154px;
+  left: 212px;
+  position: absolute;
+  top: 94px;
+  width: 791px;
+}
+
+.contact .ui-expanding-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 212px;
+  position: absolute;
+  top: 248px;
+  width: 631px;
+}
+
+.contact .spacer {
+  align-self: stretch;
+  height: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.contact .layoutpageitem {
+  height: 73px;
+}
+
+.contact .sms-email {
+  background-color: var(--background-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #9994a0;
+  border-radius: 3px;
+  height: 56px;
+  left: 321px;
+  overflow: hidden;
+  position: absolute;
+  top: 9px;
+  width: 300px;
+}
+
+.contact .textfield {
+  left: 20px;
+  position: absolute;
+  top: 13px;
+  width: 258px;
+}
+
+.contact .email-phone-toggle {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--color-ctl-text-dark);
+  display: inline-flex;
+  left: 11px;
+  position: absolute;
+  top: 13px;
+}
+
+.contact .language-select-button-toggle {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.contact .nav-list-item {
+  align-items: center;
+  background-color: var(--background-color);
+  border-color: var(--pale-slate);
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.contact .nav-list-item-1 {
+  align-items: center;
+  background-color: var(--background-color);
+  border-color: var(--pale-slate);
+  border-right-style: solid;
+  border-right-width: 1px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 69px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.contact .layoutpageitem-1 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 141px;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.contact .sms-message {
+  align-self: stretch;
+  background-color: var(--background-color);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--black);
+  flex: 1;
+  flex-grow: 1;
+  position: relative;
+}
+
+.contact .textfield-1 {
+  left: 31px;
+  position: absolute;
+  top: 11px;
+  width: 333px;
+}
+
+.contact .layoutpageitem-2 {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  height: 72px;
+  justify-content: center;
+  padding: 0px 10px;
+}
+
+.contact .sms-send {
+  align-items: center;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  padding: 10px 9px;
+  position: relative;
+}
+
+.contact .textfield-2 {
+  color: transparent;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.contact .span {
+  color: var(--primary-color);
+}
+
+.contact .span1 {
+  color: var(--background-color);
+}
+
+.contact .copyright {
+  align-self: stretch;
+  height: 38px;
+  position: relative;
+  width: 100%;
+}
+
+.contact .side-animation {
+  height: 854px;
+  object-fit: cover;
+  position: absolute;
+  width: 264px;
+}
+
+.contact .layoutpageitem-3 {
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+}
+
+.contact .textfield-3 {
+  letter-spacing: 0;
+  line-height: 27.5px;
+}

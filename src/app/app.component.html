@@ -1,0 +1,18 @@
+<div class="app fade-in screen">
+  <div class="auto-layout-frame">
+    <button class="showcase-nav-link nav-button-link" color="primary" (click)="appServices.pageToDisplay = 'SHOWCASE'" mat-button type="button" [ngClass]="getClassBySelection('SHOWCASE')"  >SHOWCASE</button>
+    <button class="about-nav-link nav-button-link" color="primary" (click)="appServices.pageToDisplay = 'ABOUT US'" mat-button type="button" [ngClass]="getClassBySelection('ABOUT US')"  >ABOUT US</button>
+    <button class="contact-nav-link nav-button-link" color="primary" (click)="appServices.pageToDisplay = 'CONTACT'" mat-button type="button" [ngClass]="getClassBySelection('CONTACT')"  >CONTACT</button>
+  </div>
+  <div class="home-frame" [ngClass]="getClassForHome()" (click)="appServices.pageToDisplay = 'HOME'" >
+    <div class="title valign-text-middle">Matrix</div>
+    <div class="pro valign-text-middle">Pro</div>
+    <img class="pro_matrix_logo-2" src="img/pro-matrix-logo-2.png" alt="Pro_matrix_logo 2" >
+  </div>
+</div>
+<app-footer class="fade-in" ></app-footer>
+<app-settings class="fade-in" ></app-settings>
+<app-home class="fade-in" *ngIf="appServices.pageToDisplay === 'HOME'"></app-home>
+<app-showcase class="fade-in" *ngIf="appServices.pageToDisplay === 'SHOWCASE'"></app-showcase>
+<app-about class="fade-in" *ngIf="appServices.pageToDisplay === 'ABOUT US'"></app-about>
+<app-contact class="fade-in" *ngIf="appServices.pageToDisplay === 'CONTACT'"></app-contact>

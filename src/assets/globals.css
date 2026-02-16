@@ -1,0 +1,160 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400|Cute+Font:400");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/6466167980fab3356bc53f96.6466167ae6315846915e8f39.1RHSu8F.hcp.png");
+
+@font-face {
+  font-family: "Neuropol-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/neuropol.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Digital Numbers-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DigitalNumbers-Regular.ttf") format("truetype");
+}
+
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.selected-item {
+  letter-spacing: 2.00px;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.swatches {
+  align-items: flex-start;
+  background-color: var(--color-ctl-unselected-light);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: -8.00px;
+  position: relative;
+  width: 300px;
+}
+
+.swatch {
+  background-color: var(--color-ctl-unselected-light);
+  height: 56px;
+  position: relative;
+  width: 300px;
+}
+
+.x-ratio {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 7px;
+  display: inline-flex;
+  gap: 2px;
+  height: 14px;
+  overflow: hidden;
+  padding: 2px 4px;
+  position: relative;
+}
+
+.text-color {
+  background-color: var(--black);
+  border: 1px solid;
+  border-color: var(--selago);
+  border-radius: 5px;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.x-text {
+  letter-spacing: 0;
+  line-height: 10px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.text-color-1 {
+  background-color: var(--color-ctl-unselected-light);
+  border: 1px solid;
+  border-color: var(--selago);
+  border-radius: 5px;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+
+.name {
+  letter-spacing: 0;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.flex-col-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 176px;
+  min-height: 52px;
+  position: absolute;
+  top: 1px;
+}
+
+.hex-10 {
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.ratio-container-10 {
+  align-items: flex-start;
+  border: 1px solid;
+  border-color: var(--selago);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  left: 0;
+  min-height: 56px;
+  padding: 7px;
+  position: absolute;
+  top: 0;
+  width: 160px;
+}
+
+.rgb-10 {
+  letter-spacing: 0;
+  line-height: 16px;
+  white-space: nowrap;
+}
