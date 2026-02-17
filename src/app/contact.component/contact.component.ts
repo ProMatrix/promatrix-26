@@ -31,7 +31,7 @@ export class ContactComponent {
   httpError = false;
 
   constructor(public appServices: AppServices, private cdr: ChangeDetectorRef, private httpClient: HttpClient) {
-    appServices.loadTranslatedPage('contact');
+    // appServices.loadTranslatedPage('contact');
   }
 
   get contactBy() : string {

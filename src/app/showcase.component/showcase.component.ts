@@ -11,6 +11,6 @@ import { AppServices } from '../app.services';
 export class ShowcaseComponent {
 
   constructor(public appServices: AppServices) {
-    appServices.loadTranslatedPage('showcase');
+    // appServices.loadTranslatedPage('showcase');
   }
 }

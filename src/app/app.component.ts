@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
   constructor(public appServices: AppServices) {
     this.environment = environment;
-    appServices.loadNavComponent();
+    // appServices.loadNavComponent();
   }
 
   ngOnInit() {

@@ -8,7 +8,7 @@ import {
   pageControl,
 } from 'C:/ProMatrix.2/anima-to-angular/frame/src/controlModel';
 
-const translations: IAppTranslations = require('./translations.json');
+// const translations: IAppTranslations = require('./translations.json');
 
 @Injectable({ providedIn: 'root' })
 export class AppServices {
@@ -17,116 +17,116 @@ export class AppServices {
     this.switchDarkMode(this.darkMode);
   }
 
-  getControlTranslation(control: IPageControl, label: string): string {
-    if (control.words && control.words.length > 0) {
-      const translation = control.words.find((x) => {
-        return x.language === this.language;
-      })?.value;
+  // getControlTranslation(control: IPageControl, label: string): string {
+  //   if (control.words && control.words.length > 0) {
+  //     const translation = control.words.find((x) => {
+  //       return x.language === this.language;
+  //     })?.value;
 
-      if (!translation) {
-        return '';
-      }
-      return translation;
-    }
+  //     if (!translation) {
+  //       return '';
+  //     }
+  //     return translation;
+  //   }
 
-    if (control.childControls && control.childControls.length > 0) {
-      const word = control.childControls.find((x) => {
-        return x.label === label;
-      });
+  //   if (control.childControls && control.childControls.length > 0) {
+  //     const word = control.childControls.find((x) => {
+  //       return x.label === label;
+  //     });
 
-      if (!word) {
-        return '';
-      }
+  //     if (!word) {
+  //       return '';
+  //     }
 
-      const translation = word.words.find((x) => {
-        return x.language === this.language;
-      })?.value;
+  //     const translation = word.words.find((x) => {
+  //       return x.language === this.language;
+  //     })?.value;
 
-      if (!translation) {
-        return '';
-      }
-      return translation;
-    }
-    return 'What?';
-  }
+  //     if (!translation) {
+  //       return '';
+  //     }
+  //     return translation;
+  //   }
+  //   return 'What?';
+  // }
 
-  navTranslatedPage: IPage | undefined;
-  getNavTranslation(className: string, label: string): string {
-    if (!this.navTranslatedPage) {
-      return '';
-    }
+  // navTranslatedPage: IPage | undefined;
+  // getNavTranslation(className: string, label: string): string {
+  //   if (!this.navTranslatedPage) {
+  //     return '';
+  //   }
 
-    const control = this.navTranslatedPage.pageControls.find((x) => {
-      return x.className === className;
-    });
-    if (!control) {
-      return '';
-    }
-    return this.getControlTranslation(control, label);
-  }
+  //   const control = this.navTranslatedPage.pageControls.find((x) => {
+  //     return x.className === className;
+  //   });
+  //   if (!control) {
+  //     return '';
+  //   }
+  //   return this.getControlTranslation(control, label);
+  // }
 
-  translatedPage: IPage | undefined;
-  getTranslationByLabel(className: string, label: string): string {
-    if (!this.translatedPage) {
-      return '';
-    }
+  // translatedPage: IPage | undefined;
+  // getTranslationByLabel(className: string, label: string): string {
+  //   if (!this.translatedPage) {
+  //     return '';
+  //   }
 
-    const control = this.translatedPage.pageControls.find((x) => {
-      return x.className === className;
-    });
+  //   const control = this.translatedPage.pageControls.find((x) => {
+  //     return x.className === className;
+  //   });
 
-    if (!control) {
-      return '';
-    }
-    return this.getControlTranslation(control, label);
-  }
+  //   if (!control) {
+  //     return '';
+  //   }
+  //   return this.getControlTranslation(control, label);
+  // }
 
-  getTranslation(className: string): string {
-    if (!this.translatedPage) {
-      return 'What?';
-    }
+  // getTranslation(className: string): string {
+  //   if (!this.translatedPage) {
+  //     return 'What?';
+  //   }
 
-    const control = this.translatedPage.pageControls.find((x) => {
-      return x.className === className;
-    });
+  //   const control = this.translatedPage.pageControls.find((x) => {
+  //     return x.className === className;
+  //   });
 
-    if (!control) {
-      return 'What?';
-    }
+  //   if (!control) {
+  //     return 'What?';
+  //   }
 
-    const translation = control.words.find((x) => {
-      return x.language === this.language;
-    })?.value;
-    if (translation) {
-      return translation;
-    } else {
-      return 'What?';
-    }
-  }
+  //   const translation = control.words.find((x) => {
+  //     return x.language === this.language;
+  //   })?.value;
+  //   if (translation) {
+  //     return translation;
+  //   } else {
+  //     return 'What?';
+  //   }
+  // }
 
-  rationaleInsert(className: string) {
-    const nodeToUpdate = document.querySelector('.' + className);
+  // rationaleInsert(className: string) {
+  //   const nodeToUpdate = document.querySelector('.' + className);
 
-    if (nodeToUpdate) {
-      const bp = 0;
-      nodeToUpdate.innerHTML = this.getTranslation(className);
-    }
-  }
+  //   if (nodeToUpdate) {
+  //     const bp = 0;
+  //     nodeToUpdate.innerHTML = this.getTranslation(className);
+  //   }
+  // }
 
-  loadTranslatedPage(pageName: string) {
-    const page = translations.pages.find((x) => {
-      return x.pageName === pageName;
-    });
+  // loadTranslatedPage(pageName: string) {
+  //   const page = translations.pages.find((x) => {
+  //     return x.pageName === pageName;
+  //   });
 
-    this.translatedPage = page;
-  }
+  //   this.translatedPage = page;
+  // }
 
-  loadNavComponent() {
-    const page = translations.pages.find((x) => {
-      return x.pageName === 'app';
-    });
-    this.navTranslatedPage = page;
-  }
+  // loadNavComponent() {
+  //   const page = translations.pages.find((x) => {
+  //     return x.pageName === 'app';
+  //   });
+  //   this.navTranslatedPage = page;
+  // }
 
   viewPort = '';
   private defaultLanguage = 'EN';

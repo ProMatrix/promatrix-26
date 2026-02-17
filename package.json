@@ -1,6 +1,6 @@
 {
   "name": "pro-matrix-2024",
-  "version": "2.1.28",
+  "version": "2.1.30",
   "scripts": {
     "start-server": "firebase serve --only functions",
     "start-client": "ng serve",

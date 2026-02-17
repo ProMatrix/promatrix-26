@@ -9,7 +9,7 @@ import { AppServices } from '../app.services';
 export class AboutComponent {
 
   constructor(public appServices: AppServices) {
-    appServices.loadTranslatedPage('about');
+    // appServices.loadTranslatedPage('about');
   }
 
 }

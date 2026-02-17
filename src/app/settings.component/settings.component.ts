@@ -10,7 +10,7 @@ import { AppServices } from '../app.services';
 export class SettingsComponent {
 
   constructor(public appServices: AppServices) {
-    appServices.loadTranslatedPage('settings');
+    // appServices.loadTranslatedPage('settings');
   }
 
 }

@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   page: controlModel.IPage | undefined;
 
   constructor(public appServices: AppServices) {
-    appServices.loadTranslatedPage('home');
+    // appServices.loadTranslatedPage('home');
    }
 
   ngOnInit() {

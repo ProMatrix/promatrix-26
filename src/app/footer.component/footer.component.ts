@@ -11,7 +11,7 @@ import { environment } from '../../environments/environment';
 export class FooterComponent {
 
   constructor(public appServices: AppServices) {
-    appServices.loadTranslatedPage('footer');
+    // appServices.loadTranslatedPage('footer');
   }
 
   get copyrightDetails() : string {
