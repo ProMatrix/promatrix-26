@@ -2,6 +2,10 @@
   "name": "pro-matrix-2024",
   "version": "2.1.31",
   "scripts": {
+    "adr:": "",
+    "new-adr": ".\\new-adr.cmd",
+    "continue-adr": ".\\continue-adr.cmd",
+    "remove-adr": ".\\remove-adr.cmd",
     "start-server": "firebase serve --only functions",
     "start-client": "ng serve",
     "watch-build-development": "ng build --watch --configuration development",
