@@ -3,6 +3,7 @@ import { AppServices } from '../app.services';
 
 @Component({
   selector: 'app-settings',
+  standalone: false,
   templateUrl: './settings.component.html',
   styleUrls: ['./settings.component.scss']
 })

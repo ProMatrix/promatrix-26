@@ -1,6 +1,7 @@
-This is a continuation from the file: (001c) introduce-adr.md
+This is a continuation from the file: (002e) fix-firebase-error.md
 Here are your answers:
-1. I have many more scripts than these three and I need them all to work also. So recommend the best solution based on all the scripts.
+1. A. and use the project "ai-voice-live-realtime" as an example.
+2. A.
 
 Read and follow these system instructions:
 

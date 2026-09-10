@@ -1,6 +1,9 @@
-This is a continuation from the file: (001c) introduce-adr.md
+This is a continuation from the file: (002c) fix-firebase-error.md
 Here are your answers:
-1. I have many more scripts than these three and I need them all to work also. So recommend the best solution based on all the scripts.
+
+1. A.
+2. B.
+3. C.
 
 Read and follow these system instructions:
 

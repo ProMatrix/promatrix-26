@@ -1,10 +1,12 @@
 @use "@angular/material" as mat;
+@use "assets/mat-controls";
+@use "./mat-light-theme";
+@use "./mat-dark-theme";
 
 @include mat.core();
 
 @import "assets/styleguide.css";
 @import "assets/globals.css";
-@import "assets/mat-controls.scss";
 
 $app-theme: mat.define-theme(
   (
@@ -22,9 +24,6 @@ $app-theme: mat.define-theme(
   @include mat.system-level-colors($app-theme);
   @include mat.system-level-typography($app-theme);
 }
-
-@import "./mat-light-theme.scss";
-@import "./mat-dark-theme.scss";
 
 .app-light-theme { 
   --background-color: var(--color-background-light);

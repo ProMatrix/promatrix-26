@@ -19,6 +19,7 @@ interface IResponseMessage {
 
 @Component({
   selector: 'app-contact',
+  standalone: false,
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })

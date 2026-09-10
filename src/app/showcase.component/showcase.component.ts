@@ -3,6 +3,7 @@ import { AppServices } from '../app.services';
 
 @Component({
   selector: 'app-showcase',
+  standalone: false,
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.scss']
 })

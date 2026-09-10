@@ -3,6 +3,7 @@ import { AppServices } from '../app.services';
 
 @Component({
   selector: 'app-about',
+  standalone: false,
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })

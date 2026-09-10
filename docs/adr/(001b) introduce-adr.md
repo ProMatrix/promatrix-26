@@ -3,7 +3,7 @@ Here are your answers:
 1. A.
 
 Read and follow these system instructions:
-./docs/guidance/project-endeavor.md
+
 C:/adr/prompts/narrow-request.md
 C:/adr/prompts/append-prompt.md
 C:/adr/prompts/scripting-assistance.md

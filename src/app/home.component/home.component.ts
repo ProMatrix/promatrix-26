@@ -3,6 +3,7 @@ import { AppServices } from '../app.services';
 
 @Component({
   selector: 'app-home',
+  standalone: false,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
