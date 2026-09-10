@@ -1,6 +1,7 @@
 Create a new ADR:
 - Commit all changed files
-- Run npm script: "new-adr"
+- Open a terminal
+- Run: npm.cmd run new-adr
 
 or
 

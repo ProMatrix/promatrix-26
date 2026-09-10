@@ -21,6 +21,16 @@
       }
     },
     {
+      "label": "ADR: new (npm.cmd)",
+      "type": "shell",
+      "command": "npm.cmd",
+      "args": ["run", "new-adr"],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
       "type": "npm",
       "script": "test",
       "isBackground": true,
