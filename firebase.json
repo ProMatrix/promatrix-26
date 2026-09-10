@@ -8,21 +8,60 @@
     ],
     "rewrites": [
       {
+        "source": "/promatrix-us/us-central1/helloWorld",
+        "function": "helloWorld"
+      },
+      {
+        "source": "/promatrix-us/us-central1/getUtcDateTime",
+        "function": "getUtcDateTime"
+      },
+      {
+        "source": "/promatrix-us/us-central1/sendSms",
+        "function": "sendSms"
+      },
+      {
+        "source": "/promatrix-us/us-central1/getAudioFromText",
+        "function": "getAudioFromText"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
     ]
   },
-  "functions": [
-    {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
-    }
-  ]
+  "functions": {
+    "source": "functions",
+    "codebase": "default",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log"
+    ]
+  },
+  "emulators": {
+    "hub": {
+      "port": 4402
+    },
+    "hosting": {
+      "port": 5002
+    },
+    "functions": {
+      "port": 5003
+    },
+    "ui": {
+      "enabled": true,
+      "port": 4002
+    },
+    "logging": {
+      "port": 4502
+    },
+    "eventarc": {
+      "port": 9301
+    },
+    "tasks": {
+      "port": 9501
+    },
+    "singleProjectMode": true
+  }
 }

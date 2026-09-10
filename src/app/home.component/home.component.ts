@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AppServices } from '../app.services';
-import * as controlModel from 'C:/ProMatrix.2/anima-to-angular/frame/src/controlModel';
 
 @Component({
   selector: 'app-home',
@@ -19,8 +18,6 @@ export class HomeComponent implements OnInit {
   showTalkShowCtrl = false;
   hostSoundwave = false;
   guestSoundwave = false;
-
-  page: controlModel.IPage | undefined;
 
   constructor(public appServices: AppServices) {
     // appServices.loadTranslatedPage('home');

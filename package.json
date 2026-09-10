@@ -6,7 +6,8 @@
     "new-adr": ".\\new-adr.cmd",
     "continue-adr": ".\\continue-adr.cmd",
     "remove-adr": ".\\remove-adr.cmd",
-    "start-server": "firebase serve --only functions",
+    "npm-functions": "npm.cmd --prefix \".\\functions\" install",
+    "start-server": "npm.cmd run build-development && npm.cmd run npm-functions && node scripts/start-firebase-emulators.js",
     "start-client": "ng serve",
     "watch-build-development": "ng build --watch --configuration development",
     "watch-build-production": "npm run prebuild && ng build --watch --configuration production",
@@ -44,6 +45,7 @@
     "@angular-devkit/build-angular": "^18.2.7",
     "@angular/cli": "^18.2.7",
     "@angular/compiler-cli": "^18.2.7",
+    "firebase-tools": "^15.26.0",
     "typescript": "~5.4.2",
     "http-server": "~14.1.1"
   }
