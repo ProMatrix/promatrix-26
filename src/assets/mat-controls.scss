@@ -88,6 +88,22 @@ app-settings {
     height: initial !important;
   }
 
+  .dark-mode-toggle {
+    --mdc-switch-selected-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-selected-focus-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-selected-hover-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-selected-pressed-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-unselected-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-unselected-focus-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-unselected-hover-track-color: var(--sys-primary, var(--primary-color));
+    --mdc-switch-unselected-pressed-track-color: var(--sys-primary, var(--primary-color));
+  }
+
+  .dark-mode-toggle .mdc-switch__track::before,
+  .dark-mode-toggle .mdc-switch__track::after {
+    background-color: var(--sys-primary, var(--primary-color)) !important;
+  }
+
   .mat-tab-group {
     font-family: initial !important;
   }
@@ -141,6 +157,12 @@ app-settings {
     cursor: default;
   }
 
+  .nav-button-link {
+    --mdc-text-button-label-text-color: var(--sys-primary, var(--primary-color));
+    --mat-text-button-state-layer-color: var(--sys-primary, var(--primary-color));
+    color: var(--sys-primary, var(--primary-color)) !important;
+  }
+
   .nav-link-unselected {
     font-family: roboto !important;
     font-size: 24px !important;
@@ -149,6 +171,8 @@ app-settings {
   }
 
   .nav-link-selected {
+    --mdc-text-button-label-text-color: var(--background-color);
+    --mat-text-button-state-layer-color: var(--background-color);
     font-family: roboto !important;
     font-size: 24px !important; 
     background-color: var(--primary-color) !important;

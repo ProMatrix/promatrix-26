@@ -1,12 +1,15 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 
 // const translations: IAppTranslations = require('./translations.json');
 
 @Injectable({ providedIn: 'root' })
 export class AppServices {
 
+  private readonly darkModeState = signal(this.readStoredDarkMode());
+  readonly isDarkMode = this.darkModeState.asReadonly();
+
   constructor() {
-    this.switchDarkMode(this.darkMode);
+    this.switchDarkMode(this.darkModeState());
   }
 
   viewPort = '';
@@ -50,20 +53,21 @@ export class AppServices {
   }
 
   get darkMode() {
-    const darkMode = localStorage.getItem('darkMode');
-    if (darkMode) {
-      if(darkMode === 'true') {
-        return true;
-      } else {
-        return false;
-      }
-    }
-    return true;
+    return this.darkModeState();
   }
 
   set darkMode(value: boolean) {
     localStorage.setItem('darkMode', value.toString());
+    this.darkModeState.set(value);
     this.switchDarkMode(value);
+  }
+
+  private readStoredDarkMode() {
+    const darkMode = localStorage.getItem('darkMode');
+    if (darkMode) {
+      return darkMode === 'true';
+    }
+    return true;
   }
 
   switchDarkMode(darkMode: boolean){
