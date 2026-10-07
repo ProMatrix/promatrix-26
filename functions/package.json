@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "firebase-admin": "14.2.0",
-    "firebase-functions": "7.3.2"
+    "firebase-functions": "7.4.0"
   },
   "devDependencies": {
     "node": "22.23.2"
