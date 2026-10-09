@@ -29,13 +29,18 @@ function createMailTransport() {
   }
 
   const port = Number(process.env.SMTP_PORT || 587);
-  const secure = String(process.env.SMTP_SECURE ?? port === 465).toLowerCase() === 'true';
+  // Port 465 uses implicit TLS (secure=true); 587/25 use STARTTLS (secure=false).
+  // Honor an explicit true/false, otherwise derive from the port so loose values (e.g. "StartTLS") don't misconfigure TLS.
+  const secureRaw = String(process.env.SMTP_SECURE ?? '').trim().toLowerCase();
+  const secure = secureRaw === 'true' ? true : secureRaw === 'false' ? false : port === 465;
 
   return nodemailer.createTransport({
     host,
     port,
     secure,
     auth: { user, pass },
+    greetingTimeout: 15000,
+    connectionTimeout: 15000,
   });
 }
 
@@ -71,7 +76,7 @@ exports.getUtcDateTime = onRequest(functionOptions, (req, res) => {
   res.json(createStatus());
 });
 
-exports.sendSms = onRequest(functionOptions, async (req, res) => {
+exports.sendSmtp = onRequest(functionOptions, async (req, res) => {
   if (applyCors(req, res)) {
     return;
   }
@@ -89,7 +94,7 @@ exports.sendSms = onRequest(functionOptions, async (req, res) => {
 
   const transport = createMailTransport();
   if (!transport) {
-    logger.error('sendSms is missing SMTP configuration (SMTP_HOST, SMTP_USER, SMTP_PASS).');
+    logger.error('sendSmtp is missing SMTP configuration (SMTP_HOST, SMTP_USER, SMTP_PASS).');
     res.status(500).json({
       ...createStatus('error'),
       message: 'Email transport is not configured.',
@@ -117,14 +122,26 @@ exports.sendSms = onRequest(functionOptions, async (req, res) => {
       ].join('\n'),
     });
 
-    logger.info('sendSms delivered the contact email.', { isEmail });
+    logger.info('sendSmtp delivered the contact email.', { isEmail });
     res.json(createStatus('sent'));
   } catch (error) {
-    logger.error('sendSms failed to deliver the contact email.', { error: error.message });
-    res.status(500).json({
+    logger.error('sendSmtp failed to deliver the contact email.', {
+      error: error.message,
+      code: error.code,
+      command: error.command,
+      response: error.response,
+      responseCode: error.responseCode,
+    });
+    const body = {
       ...createStatus('error'),
       message: 'Failed to send the contact email.',
-    });
+    };
+    // Surface the underlying reason only in the local emulator, never in production.
+    if (process.env.FUNCTIONS_EMULATOR === 'true') {
+      body.reason = error.message;
+      body.code = error.code;
+    }
+    res.status(500).json(body);
   }
 });
 

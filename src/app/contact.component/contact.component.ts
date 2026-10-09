@@ -75,7 +75,7 @@ export class ContactComponent {
       return;
     }
     const postObject: ISmsMessage = { emailAddress: this.contactFormControl.value, message: this.messageFormControl.value, privateKey }
-    this.sendSms(postObject, ()=> {
+    this.sendSmtp(postObject, ()=> {
 
       this.smsSendComplete = true;
       this.httpError = false;   
@@ -87,8 +87,8 @@ export class ContactComponent {
     });
   }
   
-  sendSms(postObject: ISmsMessage, success: Function, failed: Function) {
-    const subscription = this.httpClient.post(environment.postSendSms, postObject).pipe(mergeWith()).subscribe({
+  sendSmtp(postObject: ISmsMessage, success: Function, failed: Function) {
+    const subscription = this.httpClient.post(environment.postSendSmtp, postObject).pipe(mergeWith()).subscribe({
       next: (responseMessage: IResponseMessage | any) => {
         success(responseMessage);
       },

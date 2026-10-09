@@ -4,6 +4,6 @@ export const environment = {
   production: false,
   getHelloWorld: 'http://127.0.0.1:5013/demo-promatrix-us/us-central1/helloWorld',
   getUtcDateTime: 'http://127.0.0.1:5013/demo-promatrix-us/us-central1/getUtcDateTime',
-  postSendSms: 'http://127.0.0.1:5013/demo-promatrix-us/us-central1/sendSms',
+  postSendSmtp: 'http://127.0.0.1:5013/demo-promatrix-us/us-central1/sendSmtp',
   getAudioFromText: 'http://127.0.0.1:5013/demo-promatrix-us/us-central1/getAudioFromText'
 };

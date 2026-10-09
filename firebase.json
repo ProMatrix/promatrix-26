@@ -16,8 +16,8 @@
         "function": "getUtcDateTime"
       },
       {
-        "source": "/promatrix-us/us-central1/sendSms",
-        "function": "sendSms"
+        "source": "/promatrix-us/us-central1/sendSmtp",
+        "function": "sendSmtp"
       },
       {
         "source": "/promatrix-us/us-central1/getAudioFromText",
