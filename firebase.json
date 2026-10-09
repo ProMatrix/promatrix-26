@@ -8,35 +8,9 @@
     ],
     "rewrites": [
       {
-        "source": "/promatrix-us/us-central1/helloWorld",
-        "function": "helloWorld"
-      },
-      {
-        "source": "/promatrix-us/us-central1/getUtcDateTime",
-        "function": "getUtcDateTime"
-      },
-      {
-        "source": "/promatrix-us/us-central1/sendSms",
-        "function": "sendSms"
-      },
-      {
-        "source": "/promatrix-us/us-central1/getAudioFromText",
-        "function": "getAudioFromText"
-      },
-      {
         "source": "**",
         "destination": "/index.html"
       }
-    ]
-  },
-  "functions": {
-    "source": "functions",
-    "codebase": "default",
-    "ignore": [
-      "node_modules",
-      ".git",
-      "firebase-debug.log",
-      "firebase-debug.*.log"
     ]
   },
   "emulators": {
@@ -45,9 +19,6 @@
     },
     "hosting": {
       "port": 5012
-    },
-    "functions": {
-      "port": 5013
     },
     "ui": {
       "enabled": true,

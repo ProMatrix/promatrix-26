@@ -4,7 +4,6 @@ const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..');
 const firebaseCli = path.join(repoRoot, 'node_modules', 'firebase-tools', 'lib', 'bin', 'firebase.js');
-const functionsDiscoveryTimeoutSeconds = '30';
 
 if (!fs.existsSync(firebaseCli)) {
   console.error('Missing local firebase-tools. Run npm.cmd install from the project root.');
@@ -20,7 +19,7 @@ const child = spawn(
     '--config',
     'firebase.json',
     '--only',
-    'hosting,functions',
+    'hosting',
     '--project',
     'promatrix-us',
     ...process.argv.slice(2),
@@ -29,8 +28,6 @@ const child = spawn(
     cwd: repoRoot,
     env: {
       ...process.env,
-      FUNCTIONS_EMULATOR: 'true',
-      FUNCTIONS_DISCOVERY_TIMEOUT: functionsDiscoveryTimeoutSeconds,
     },
     stdio: 'inherit',
     shell: false,

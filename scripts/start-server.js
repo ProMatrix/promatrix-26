@@ -4,39 +4,12 @@ const net = require('net');
 const path = require('path');
 
 const repoRoot = path.resolve(__dirname, '..');
-const firebaseCli = path.join(repoRoot, 'node_modules', 'firebase-tools', 'lib', 'bin', 'firebase.js');
 const angularCli = path.join(repoRoot, 'node_modules', '@angular', 'cli', 'bin', 'ng.js');
-const functionsNode = path.join(
-  repoRoot,
-  'functions',
-  'node_modules',
-  'node',
-  'bin',
-  process.platform === 'win32' ? 'node.exe' : 'node',
-);
-const functionsDiscoveryTimeoutSeconds = '30';
-const firebaseProjectId = 'demo-promatrix-us';
 const hostingHost = '127.0.0.1';
 const defaultHostingPort = 4200;
 
 for (const [name, filePath, installHint] of [
-  ['local firebase-tools', firebaseCli, 'Run npm.cmd install from the project root.'],
   ['local Angular CLI', angularCli, 'Run npm.cmd install from the project root.'],
-  [
-    'local Firebase Functions SDK',
-    path.join(repoRoot, 'functions', 'node_modules', 'firebase-functions', 'package.json'),
-    'Run npm.cmd run npm-functions from the project root.',
-  ],
-  [
-    'local Firebase Admin SDK',
-    path.join(repoRoot, 'functions', 'node_modules', 'firebase-admin', 'package.json'),
-    'Run npm.cmd run npm-functions from the project root.',
-  ],
-  [
-    'local Node 22 Functions runtime',
-    functionsNode,
-    'Run npm.cmd run npm-functions from the project root.',
-  ],
 ]) {
   if (!fs.existsSync(filePath)) {
     console.error(`Missing ${name}. ${installHint}`);
@@ -44,33 +17,8 @@ for (const [name, filePath, installHint] of [
   }
 }
 
-const functionsCommand = {
-  name: 'functions',
-  command: functionsNode,
-  cleanNpmLifecycleEnv: true,
-  env: {
-    FUNCTIONS_EMULATOR: 'true',
-    FUNCTIONS_DISCOVERY_TIMEOUT: functionsDiscoveryTimeoutSeconds,
-  },
-  args: [
-    '--no-deprecation',
-    firebaseCli,
-    'emulators:start',
-    '--config',
-    'firebase.json',
-    '--only',
-    'functions',
-    '--project',
-    firebaseProjectId,
-  ],
-};
-
-const functionsReadyPattern = /All emulators ready|functions:.*listening/i;
-
 const children = [];
 let stopping = false;
-let hostingStarted = false;
-let hostingCommand;
 
 function createChildEnv(command) {
   const env = {
@@ -105,7 +53,6 @@ function startCommand(command) {
     stdio: ['inherit', 'pipe', 'pipe'],
     shell: false,
   });
-
   children.push(child);
 
   child.on('error', (error) => {
@@ -216,25 +163,6 @@ function stopChildren(signal = 'SIGTERM') {
   }
 }
 
-function startHostingAfterFunctionsReady(line) {
-  if (hostingStarted || !functionsReadyPattern.test(line)) {
-    return;
-  }
-
-  if (!hostingCommand) {
-    console.error('[hosting] hosting command was not initialized');
-    stopChildren();
-    process.exitCode = 1;
-    return;
-  }
-
-  hostingStarted = true;
-  console.log(`[${hostingCommand.name}] starting after ${functionsCommand.name} reported ready`);
-  const hosting = startCommand(hostingCommand);
-  prefixStream(hosting.stdout, hostingCommand.name);
-  prefixStream(hosting.stderr, hostingCommand.name);
-}
-
 async function main() {
   const preferredHostingPort = getPreferredHostingPort();
   const hostingPort = await findHostingPort(preferredHostingPort);
@@ -243,11 +171,10 @@ async function main() {
     console.log(`[hosting] port ${preferredHostingPort} is in use; using ${hostingPort}`);
   }
 
-  hostingCommand = createHostingCommand(hostingPort);
-
-  const functions = startCommand(functionsCommand);
-  prefixStream(functions.stdout, functionsCommand.name, startHostingAfterFunctionsReady);
-  prefixStream(functions.stderr, functionsCommand.name, startHostingAfterFunctionsReady);
+  const hostingCommand = createHostingCommand(hostingPort);
+  const hosting = startCommand(hostingCommand);
+  prefixStream(hosting.stdout, hostingCommand.name);
+  prefixStream(hosting.stderr, hostingCommand.name);
 }
 
 main().catch((error) => {

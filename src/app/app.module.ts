@@ -19,7 +19,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
-import { HttpClientModule } from '@angular/common/http';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
@@ -46,8 +45,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     BrowserModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatButtonToggleModule,
-    HttpClientModule
+    MatButtonToggleModule
   ],
   providers: [
 
