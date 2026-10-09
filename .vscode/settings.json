@@ -2,5 +2,7 @@
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.automationProfile.windows": {
     "path": "cmd.exe"
-  }
+  },
+  "codeQL.githubDatabase.download": "never",
+  "sarif-viewer.connectToGithubCodeScanning": "off"
 }
