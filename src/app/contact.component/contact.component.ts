@@ -79,7 +79,7 @@ export class ContactComponent {
 
       this.smsSendComplete = true;
       this.httpError = false;   
-         this.cdr.detectChanges();
+      this.cdr.detectChanges();
     }, (e: HttpErrorResponse)=> {
       this.httpError = true;
       this.smsSendComplete = true;      
