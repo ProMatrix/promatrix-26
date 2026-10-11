@@ -1,5 +1,6 @@
 Read and follow these system instructions:
 
+prompts/refactor-strategy.md
 C:/adr/prompts/narrow-request.md
 C:/adr/prompts/append-prompt.md
 C:/adr/prompts/scripting-assistance.md
