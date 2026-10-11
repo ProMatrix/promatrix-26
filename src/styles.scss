@@ -34,6 +34,9 @@ $app-theme: mat.define-theme(
   --ctl-text-color: var(--color-ctl-text-light);
   --ctl-selected-color: var(--color-ctl-selected-light);
   --ctl-unselected-color: var(--color-ctl-unselected-light);
+  // Keep Material's system colors on the app's blue scheme (no purple)
+  --sys-primary: var(--primary-color);
+  --sys-tertiary: var(--accent-color);
   body {
     margin: 0;
     background-color: var(--color-background-light);
@@ -49,6 +52,9 @@ $app-theme: mat.define-theme(
   --ctl-text-color: var(--color-ctl-text-dark);
   --ctl-selected-color: var(--color-ctl-selected-dark);
   --ctl-unselected-color: var(--color-ctl-unselected-dark);
+  // Keep Material's system colors on the app's blue scheme (no purple)
+  --sys-primary: var(--primary-color);
+  --sys-tertiary: var(--accent-color);
   body {
     margin: 0;
     background-color: var(--color-background-dark);

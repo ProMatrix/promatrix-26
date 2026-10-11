@@ -159,7 +159,9 @@ app-settings {
 
   .nav-button-link {
     --mdc-text-button-label-text-color: var(--sys-primary, var(--primary-color));
-    --mat-text-button-state-layer-color: var(--sys-primary, var(--primary-color));
+    // Subtle neutral hover/press tint (no purple, theme-aware)
+    --mat-button-text-state-layer-color: var(--app-text-color);
+    --mat-button-text-ripple-color: color-mix(in srgb, var(--app-text-color) 10%, transparent);
     color: var(--sys-primary, var(--primary-color)) !important;
   }
 
