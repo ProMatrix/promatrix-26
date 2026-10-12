@@ -65,3 +65,32 @@ The button appeared immediately instead of after the staged reveal, and the cont
 
 - The halo `text-shadow` now applies to all `.rationale-component` text (including titles) site-wide; it is subtle, but it is a global typographic change, not scoped only to blocks that overlap imagery.
 - Decorative spacer frames (`.frame-5`) on contact/showcase were left opaque; they are tiny (18px) and not content text, so they were out of scope.
+
+## Follow-up: home-style layout applied to About, Showcase, and Contact
+
+The layout half of the home pattern was applied to the remaining pages (answers 1-A pin top-right + widen content, 2-A natural flow, 3-A anchored top-right, 4-A content images overlay too). Previously these pages were flex **rows** with `.side-animation` (854×264) as a sibling to the right of the content, so the image and content sat side-by-side and never overlapped. They now match the home page: the side image is pinned behind the content, and the content flows in a column on top of it.
+
+### Issue Resolved
+
+"Complete the refactoring of all the pages" — About, Showcase, and Contact needed the same treatment as the home page so that the text and section images sit on top of the right-side decorative image, rather than beside it, and so the pages flow naturally instead of relying on hard-coded heights.
+
+### Solution Details
+
+For each of [about.component.scss](../../src/app/about.component/about.component.scss), [showcase.component.scss](../../src/app/showcase.component/showcase.component.scss), and [contact.component.scss](../../src/app/contact.component/contact.component.scss):
+
+- **Page container** (`.about` / `.showcase` / `.contact`) changed from a `display:flex` row (with `gap`) to `display:flex; flex-direction:column; position:relative; overflow:hidden`, and the fixed `height` became `min-height` so content sizes the page.
+- **Side image** (`.side-animation`) changed from `position:relative` (in-flow sibling) to `position:absolute; right:0; top:0; z-index:0; pointer-events:none`, pinning it to the top-right behind the content (anchored at the top only, like home).
+- **Content container** (`.ui-expanding-container-text` / `.ui-expanding-container`) got `z-index:1` so it layers above the image, and was widened (About 980→1210px, Showcase set to 1172px, Contact 992→1172px) so the content — including right-aligned section images — extends over the pinned image where they meet. Showcase's container also changed from `inline-flex` to `flex` so its `width:100%` rows resolve against the new width.
+
+Content backgrounds were already transparent with the legibility halo shadow from the previous (007c/007d) pass, so the overlaid text and images read cleanly over the image.
+
+### Validation
+
+- `npm.cmd run build-development` completed successfully; `get_errors` on all three SCSS files reported none.
+- Verified each page in the browser at `127.0.0.1:4200` (including a 1440px viewport via Playwright): About, Showcase, and Contact now flow vertically with the decorative image pinned top-right behind the content, and the text/section images overlay it where they meet (e.g. the About "Company Profile" copy sits over the hexagon image, Showcase section images layer in the flow). No layout breakage; nav/footer unaffected.
+
+### Follow-up Risks or Limitations
+
+- **Content still references non-Microsoft platforms.** Showcase and Contact copy still mention Google/Dialogflow/GCP/AWS, which conflicts with the `refactor-strategy.md` Microsoft-only goal. That content migration is a separate effort, out of scope for this layout/background ADR.
+- The widened content columns (1172–1210px) assume the app's `min-width: 1440px` shell; the overlap is most visible near that width. On much wider viewports the pinned image sits at the far-right edge with a gap before the content, same as the home page.
+- Fixed `min-height` values (2289/2232/1080px) were preserved as minimums; if content grows the pages extend naturally, but the minimums are still hand-tuned rather than purely content-driven.

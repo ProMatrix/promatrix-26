@@ -4,9 +4,11 @@
   align-items: flex-start;
   background-color: var(--background-color);
   display: flex;
-  gap: 50px;
-  height: 1080px;
+  flex-direction: column;
+  min-height: 1080px;
   margin-top: 75px;
+  overflow: hidden;
+  position: relative;
 }
 
 .contact .ui-expanding-container {
@@ -17,7 +19,8 @@
   margin-left: 134px;
   margin-top: 81px;
   position: relative;
-  width: 992px;
+  width: 1172px;
+  z-index: 1;
 }
 
 .contact .ui-expanding-container-item {
@@ -97,6 +100,10 @@
 .contact .side-animation {
   height: 854px;
   object-fit: cover;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 264px;
+  z-index: 0;
+  pointer-events: none;
 }

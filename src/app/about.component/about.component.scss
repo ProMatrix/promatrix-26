@@ -4,9 +4,11 @@
   align-items: flex-start;
   background-color: var(--background-color);
   display: flex;
-  gap: 81px;
-  height: 2289px;
-   margin-top: 75px;
+  flex-direction: column;
+  min-height: 2289px;
+  margin-top: 75px;
+  overflow: hidden;
+  position: relative;
 }
 
 .about .ui-expanding-container-text {
@@ -16,7 +18,8 @@
   margin-left: 115px;
   margin-top: 65px;
   position: relative;
-  width: 980px;
+  width: 1210px;
+  z-index: 1;
 }
 
 .about .ui-expanding-container-text-item {
@@ -262,8 +265,12 @@
 .about .side-animation {
   height: 854px;
   object-fit: cover;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 264px;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .about .ai-strategies {

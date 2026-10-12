@@ -4,18 +4,22 @@
   align-items: flex-start;
   background-color: var(--background-color);
   display: flex;
-  gap: 50px;
-  height: 2232px;
-   margin-top: 75px;
+  flex-direction: column;
+  min-height: 2232px;
+  margin-top: 75px;
+  overflow: hidden;
+  position: relative;
 }
 
 .showcase .ui-expanding-container {
   align-items: flex-start;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   margin-left: 134px;
   margin-top: 81px;
   position: relative;
+  width: 1172px;
+  z-index: 1;
 }
 
 .showcase .ui-expanding-container-item {
@@ -249,8 +253,12 @@
 .showcase .side-animation {
   height: 854px;
   object-fit: cover;
-  position: relative;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 264px;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .showcase .ai-strategies {
