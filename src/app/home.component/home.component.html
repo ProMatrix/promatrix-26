@@ -35,7 +35,7 @@
 
     <div class="ui-expanding-row">
       <div class="spacer">
-        <button class="more-information-button mat-button" [disabled]="false" (click)="appServices.pageToDisplay = 'SHOWCASE'" mat-flat-button [ngClass]="classByDisabled" title="">&nbsp;&nbsp;More Information&nbsp;&nbsp;</button>
+        <button class="w3-animate-zoom more-information-button mat-button" *ngIf="showMoreInfoButton" [disabled]="false" (click)="appServices.pageToDisplay = 'SHOWCASE'" mat-flat-button [ngClass]="classByDisabled" title="">&nbsp;&nbsp;More Information&nbsp;&nbsp;</button>
       </div>
     </div>
   </div>

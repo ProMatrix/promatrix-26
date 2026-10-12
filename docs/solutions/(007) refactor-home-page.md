@@ -36,3 +36,32 @@ No PowerShell was used; validation ran with `npm.cmd`.
 - The flow layout keeps a `min-height: 720px` so the page still fills the viewport when copy is short; very long future copy will simply extend the page (intended).
 - `min-width: 1440px` is still inherited from the app shell, so the home page is not yet responsive below that width; narrowing/responsiveness was not part of this request.
 - The decorative background remains a fixed 658×402 element pinned top-right; on very wide viewports it stays anchored to the right edge rather than scaling.
+
+## Follow-up: deferred button reveal + transparent content over imagery (all pages)
+
+Two further refinements completed in the (007c)/(007d) continuation (answers 1-A deferred button, 2-A fully transparent, 3-B all pages, 4-B transparent + text-shadow):
+
+- **"More Information" button now reveals only after every section.** It is gated behind a new `showMoreInfoButton` flag that flips one timed step after `showCopilotSection`, with the same `w3-animate-zoom` fade-in. The `.spacer` reserves the button's height, so nothing jumps when it appears.
+- **Content text no longer blanks out the background image.** The content blocks previously used an opaque `background-color: var(--background-color)`, which masked the decorative image wherever the flowing text overlapped it on narrower windows (the transparent-background titles never had this problem). All content blocks across every page were set to `background-color: transparent`, and a subtle theme-aware halo `text-shadow` was added globally to `.rationale-component` so the overlaid text stays legible over the image in both light and dark modes.
+
+### Issue Resolved
+
+The button appeared immediately instead of after the staged reveal, and the content paragraphs' opaque backgrounds cut rectangular holes in the right-side imagery when the viewport narrowed — a problem present on every page, with the home page prioritized.
+
+### Solution Details
+
+- [src/app/home.component/home.component.ts](../../src/app/home.component/home.component.ts) — added `showMoreInfoButton` and an extra `setTimeout` step after `showCopilotSection`.
+- [src/app/home.component/home.component.html](../../src/app/home.component/home.component.html) — the button now has `*ngIf="showMoreInfoButton"` and `w3-animate-zoom`.
+- [src/app/home.component/home.component.scss](../../src/app/home.component/home.component.scss) — the combined content rule (`.welcome-conditional-text, .more-info-conditional-text, .section-text`) background set to `transparent`.
+- [src/assets/mat-controls.scss](../../src/assets/mat-controls.scss) — `.rationale-component` now sets `background-color: transparent` and `text-shadow: 0 0 4px var(--background-color), 0 0 2px var(--background-color)` (a page-colored halo that keeps overlaid text legible in both themes).
+- Content blocks set to transparent across the other pages: [about.component.scss](../../src/app/about.component/about.component.scss) (company-profile, ai-strategies, automation, integration, innovation, courses, founder-cto rationales), [contact.component.scss](../../src/app/contact.component/contact.component.scss) (lets-connect / reach-out rationales), and [showcase.component.scss](../../src/app/showcase.component/showcase.component.scss) (ai-strategies, chatmate, smart-build, help-system, hands-free, translation-agent rationales). Page-container backgrounds (`.about`, `.home`, `.contact`, `.showcase`) and decorative spacers were intentionally left opaque.
+
+### Validation
+
+- `npm.cmd run build-development` completed successfully.
+- Verified in the browser at `127.0.0.1:4200`: on load the home sections fade in and the "More Information" button appears only after the final "Built with GitHub Copilot" section. The "Innovative Solutions" paragraph now shows the hexagonal background image through the text, with the halo shadow keeping the copy readable in dark mode.
+
+### Follow-up Risks or Limitations
+
+- The halo `text-shadow` now applies to all `.rationale-component` text (including titles) site-wide; it is subtle, but it is a global typographic change, not scoped only to blocks that overlap imagery.
+- Decorative spacer frames (`.frame-5`) on contact/showcase were left opaque; they are tiny (18px) and not content text, so they were out of scope.

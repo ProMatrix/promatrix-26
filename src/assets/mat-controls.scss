@@ -30,6 +30,9 @@ app-settings {
 }
 
 .rationale-component {
+  // Transparent + halo shadow so content text overlays page imagery legibly, like the titles
+  background-color: transparent;
+  text-shadow: 0 0 4px var(--background-color), 0 0 2px var(--background-color);
   p {
     margin-top: 0;
     cursor: default;

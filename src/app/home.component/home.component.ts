@@ -18,6 +18,7 @@ export class HomeComponent implements OnInit {
   showMoreInfoText = false;
   showMicrosoftServices = false;
   showCopilotSection = false;
+  showMoreInfoButton = false;
 
   constructor(public appServices: AppServices, private readonly changeDetectorRef: ChangeDetectorRef) {
     // appServices.loadTranslatedPage('home');
@@ -47,6 +48,9 @@ export class HomeComponent implements OnInit {
                 this.updateView(() => { this.showMicrosoftServices = true; });
                 setTimeout(()=> {
                   this.updateView(() => { this.showCopilotSection = true; });
+                  setTimeout(()=> {
+                    this.updateView(() => { this.showMoreInfoButton = true; });
+                  }, 250);
                 }, 250);
               }, 250);
             }, 250);
