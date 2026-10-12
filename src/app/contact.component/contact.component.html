@@ -2,15 +2,15 @@
   <div class="contact screen">
     <div class="ui-expanding-container">
       <div class="ui-expanding-container-item">
-        <div class="w3-animate-zoom lets-connect-title rationale-component"><div class="text text-2 neuropol-regular-normal-deep-cerulean-24px">Let's Connect</div></div>
+        <div class="w3-animate-zoom lets-connect-title rationale-component" *ngIf="showLetsConnectTitle"><div class="text text-2 neuropol-regular-normal-deep-cerulean-24px">Let's Connect</div></div>
       </div>
-      <div class="w3-animate-zoom lets-connect-rationale rationale-component"><p class="text-1 text-2 roboto-normal-gravel-16px">ProMatrix offers a rapid approach to software development, providing low-cost, low-code solutions from design to deployment. Our offerings include integration with AI, multiple languages, help desks, and contact centers, alongside compatibility with major services like GCP, Azure, and AWS.<br><br>If you're seeking consultation on software development, enterprise architecture, or AI solutions, ProMatrix invites you to explore our consulting options and scheduling availability.</p></div>
+      <div class="w3-animate-zoom lets-connect-rationale rationale-component" *ngIf="showLetsConnectText"><p class="text-1 text-2 roboto-normal-gravel-16px">ProMatrix offers a rapid approach to software development, providing low-cost, low-code solutions from design to deployment. Our offerings include integration with AI, multiple languages, help desks, and contact centers, alongside compatibility with major services like GCP, Azure, and AWS.<br><br>If you're seeking consultation on software development, enterprise architecture, or AI solutions, ProMatrix invites you to explore our consulting options and scheduling availability.</p></div>
       <div class="spacer spacer-4">
         <div class="frame-5"></div>
       </div>
-      <div class="w3-animate-zoom reach-out-rationale rationale-component"><p class="text-1 text-2 roboto-normal-gravel-16px">Please reach out &mdash; we'd love to hear from you and explore your software development strategy to give you the competitive advantage.</p></div>
+      <div class="w3-animate-zoom reach-out-rationale rationale-component" *ngIf="showReachOutText"><p class="text-1 text-2 roboto-normal-gravel-16px">Please reach out &mdash; we'd love to hear from you and explore your software development strategy to give you the competitive advantage.</p></div>
       <div class="ui-expanding-container-item linkedin-action">
-        <a class="linkedin-button mat-form-button" mat-flat-button [href]="linkedInUrl" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;Connect on LinkedIn&nbsp;&nbsp;</a>
+        <a class="w3-animate-zoom linkedin-button mat-form-button" *ngIf="showConnectButton" mat-flat-button [href]="linkedInUrl" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;Connect on LinkedIn&nbsp;&nbsp;</a>
       </div>
     </div>
     <div class="side-animation" [ngClass]="appServices.darkMode ? 'side-animation-model-dark' : 'side-animation-model-light'"></div>
