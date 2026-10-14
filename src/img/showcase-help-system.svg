@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="AI Help System vision and screen share illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef7fd"/>
+      <stop offset="0.55" stop-color="#cfeaf8"/>
+      <stop offset="1" stop-color="#a7d8f0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.65">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16324e"/>
+      <stop offset="1" stop-color="#09182a"/>
+    </linearGradient>
+    <linearGradient id="refl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c2238" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0c2238" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <ellipse cx="400" cy="250" rx="300" ry="210" fill="url(#glow)"/>
+  <rect x="196" y="402" width="408" height="86" rx="22" fill="url(#refl)"/>
+  <rect x="170" y="95" width="460" height="300" rx="26" fill="url(#panel)" stroke="#35c6f4" stroke-width="3"/>
+  <rect x="170" y="95" width="460" height="300" rx="26" fill="none" stroke="#7fe3ff" stroke-width="1" opacity="0.5"/>
+  <g stroke="#2aa9d6" stroke-width="2.5" fill="none" opacity="0.5" stroke-linecap="round">
+    <path d="M170 150 h40 v-22"/>
+    <path d="M630 150 h-40 v-22"/>
+    <path d="M170 340 h34 v24"/>
+    <path d="M630 340 h-34 v24"/>
+    <path d="M210 128 h40"/>
+    <path d="M590 128 h-40"/>
+  </g>
+  <g fill="#35c6f4">
+    <circle cx="210" cy="128" r="3.5"/>
+    <circle cx="590" cy="128" r="3.5"/>
+    <circle cx="204" cy="364" r="3.5"/>
+    <circle cx="596" cy="364" r="3.5"/>
+  </g>
+  <g fill="none" stroke="#eafaff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="326" y="180" width="148" height="100" rx="10"/>
+    <path d="M400 280 v18 M374 306 h52"/>
+    <path d="M356 230 q44 -40 88 0 q-44 40 -88 0 z"/>
+  </g>
+  <circle cx="400" cy="230" r="12" fill="#35c6f4"/>
+  <g fill="none" stroke="#ff5fd6" stroke-width="5" stroke-linecap="round">
+    <path d="M330 206 a74 74 0 0 1 140 0"/>
+  </g>
+  <g fill="none" stroke="#ff5fd6" stroke-width="5" stroke-linejoin="round">
+    <rect x="320" y="202" width="16" height="28" rx="5"/>
+    <rect x="464" y="202" width="16" height="28" rx="5"/>
+  </g>
+</svg>
