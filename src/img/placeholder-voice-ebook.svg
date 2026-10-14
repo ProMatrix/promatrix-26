@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Real-Time Voice eBook Assistant placeholder">
+  <rect width="640" height="420" fill="#1c1c1c"/>
+  <rect x="12" y="12" width="616" height="396" rx="14" fill="none" stroke="#57a5cb" stroke-width="2" stroke-dasharray="10 8"/>
+  <g fill="none" stroke="#57a5cb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M300 120 v104"/>
+    <path d="M300 130 c-28 -18 -62 -18 -90 0 v104 c28 -18 62 -18 90 0"/>
+    <path d="M300 130 c28 -18 62 -18 90 0 v104 c-28 -18 -62 -18 -90 0"/>
+    <path d="M410 150 q18 22 0 44"/>
+    <path d="M432 138 q30 34 0 68"/>
+  </g>
+  <text x="320" y="300" text-anchor="middle" fill="#d9d9d9" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">Real-Time Voice eBook Assistant</text>
+  <text x="320" y="338" text-anchor="middle" fill="#8a8a8a" font-family="Segoe UI, Arial, sans-serif" font-size="20">Placeholder image</text>
+</svg>

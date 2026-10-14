@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="AI Training Material Generator placeholder">
+  <rect width="640" height="420" fill="#1c1c1c"/>
+  <rect x="12" y="12" width="616" height="396" rx="14" fill="none" stroke="#57a5cb" stroke-width="2" stroke-dasharray="10 8"/>
+  <g fill="none" stroke="#57a5cb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="250" y="120" width="140" height="104" rx="8"/>
+    <path d="M250 150 h140"/>
+    <path d="M276 180 h88"/>
+    <path d="M276 200 h60"/>
+  </g>
+  <text x="320" y="300" text-anchor="middle" fill="#d9d9d9" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">AI Training Material Generator</text>
+  <text x="320" y="338" text-anchor="middle" fill="#8a8a8a" font-family="Segoe UI, Arial, sans-serif" font-size="20">Placeholder image</text>
+</svg>
