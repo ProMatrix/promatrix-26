@@ -4,6 +4,16 @@
     <button class="about-nav-link nav-button-link" color="primary" (click)="appServices.pageToDisplay = 'ABOUT US'" mat-button type="button" [ngClass]="getClassBySelection('ABOUT US')"  >ABOUT US</button>
     <button class="contact-nav-link nav-button-link" color="primary" (click)="appServices.pageToDisplay = 'CONTACT'" mat-button type="button" [ngClass]="getClassBySelection('CONTACT')"  >CONTACT</button>
   </div>
+  <div class="nav-menu">
+    <button class="nav-menu-toggle" mat-icon-button type="button" (click)="toggleMenu()" aria-label="Open navigation menu" aria-haspopup="true" [attr.aria-expanded]="menuOpen">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="nav-menu-dropdown" *ngIf="menuOpen">
+      <button class="nav-button-link" color="primary" (click)="navigate('SHOWCASE')" mat-button type="button" [ngClass]="getClassBySelection('SHOWCASE')">SHOWCASE</button>
+      <button class="nav-button-link" color="primary" (click)="navigate('ABOUT US')" mat-button type="button" [ngClass]="getClassBySelection('ABOUT US')">ABOUT US</button>
+      <button class="nav-button-link" color="primary" (click)="navigate('CONTACT')" mat-button type="button" [ngClass]="getClassBySelection('CONTACT')">CONTACT</button>
+    </div>
+  </div>
   <div class="home-frame" [ngClass]="getClassForHome()" (click)="appServices.pageToDisplay = 'HOME'" >
     <div class="title valign-text-middle">Matrix</div>
     <div class="pro valign-text-middle">Pro</div>
@@ -11,7 +21,6 @@
   </div>
 </div>
 <app-footer class="fade-in" ></app-footer>
-<app-settings class="fade-in" ></app-settings>
 <app-home class="fade-in" *ngIf="appServices.pageToDisplay === 'HOME'"></app-home>
 <app-showcase class="fade-in" *ngIf="appServices.pageToDisplay === 'SHOWCASE'"></app-showcase>
 <app-about class="fade-in" *ngIf="appServices.pageToDisplay === 'ABOUT US'"></app-about>

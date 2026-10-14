@@ -4,7 +4,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer.component/footer.component';
-import { SettingsComponent } from './settings.component/settings.component';
 import { ContactComponent } from './contact.component/contact.component';
 import { HomeComponent } from './home.component/home.component';
 import { ShowcaseComponent } from './showcase.component/showcase.component';
@@ -16,7 +15,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatTabsModule } from '@angular/material/tabs';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
@@ -25,7 +23,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   declarations: [
     AppComponent,
     FooterComponent,
-    SettingsComponent,
     ContactComponent,
     HomeComponent,
     ShowcaseComponent,
@@ -44,7 +41,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatNativeDateModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
     MatButtonToggleModule
   ],
   providers: [
