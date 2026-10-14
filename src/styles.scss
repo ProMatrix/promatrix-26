@@ -1,6 +1,5 @@
 @use "@angular/material" as mat;
 @use "assets/mat-controls";
-@use "./mat-light-theme";
 @use "./mat-dark-theme";
 
 @include mat.core();
@@ -25,24 +24,6 @@ $app-theme: mat.define-theme(
   @include mat.system-level-typography($app-theme);
 }
 
-.app-light-theme { 
-  --background-color: var(--color-background-light);
-  --primary-color: var(--color-primary-500);
-  --accent-color: var(--color-accent-500);    
-  --app-text-color: var(--color-app-text-light);
-  --ctl-backgnd-color: var(--color-ctl-backgnd-light);
-  --ctl-text-color: var(--color-ctl-text-light);
-  --ctl-selected-color: var(--color-ctl-selected-light);
-  --ctl-unselected-color: var(--color-ctl-unselected-light);
-  // Keep Material's system colors on the app's blue scheme (no purple)
-  --sys-primary: var(--primary-color);
-  --sys-tertiary: var(--accent-color);
-  body {
-    margin: 0;
-    background-color: var(--color-background-light);
-  }
-}
-
 .app-dark-theme { 
   --background-color: var(--color-background-dark);
   --primary-color: var(--color-primary-300);
@@ -61,20 +42,10 @@ $app-theme: mat.define-theme(
   }
 }
 
-.side-animation-model-light {
-  position: fixed !important;
-  right: 0 !important;
-  background-image: url('./img/side-thing-background-light.gif');
-}
-
 .side-animation-model-dark {
   position: fixed !important;
   right: 0 !important;
   background-image: url('./img/side-thing-background-dark.gif');
-}
-
-.landing-background-model-light {
-  background-image: url('./img/landing-background-light.gif');
 }
 
 .landing-background-model-dark {

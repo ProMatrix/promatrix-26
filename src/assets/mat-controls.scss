@@ -22,13 +22,6 @@ app-footer {
   width: 100%;
 }
 
-app-settings {
-  position: fixed;
-  left: 30px;
-  top: 125px;
-  z-index: 99;
-}
-
 .rationale-component {
   // Transparent + halo shadow so content text overlays page imagery legibly, like the titles
   background-color: transparent;

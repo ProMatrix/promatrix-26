@@ -39,5 +39,16 @@ export class AppComponent implements OnInit {
     return 'nav-link-unselected';
   }
 
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  navigate(page: string) {
+    this.appServices.pageToDisplay = page;
+    this.menuOpen = false;
+  }
+
  
 }
