@@ -54,10 +54,10 @@ export class HomeComponent implements OnInit {
                 }, 250);
               }, 250);
             }, 250);
-          }, 250);
+          }, 1000);
         }, 250);
-      }, 500);
-    }, 1250);
+      }, 1500);
+    }, 1000);
    }
 
   get classByDisabled() {
