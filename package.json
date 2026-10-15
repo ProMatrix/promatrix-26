@@ -1,6 +1,6 @@
 {
   "name": "promatrix-26",
-  "version": "2.1.32",
+  "version": "2.1.33",
   "scripts": {
     "adr:": "",
     "new-adr": ".\\new-adr.cmd",
