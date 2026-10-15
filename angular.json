@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/pro-matrix-2024",
+            "outputPath": "dist/promatrix",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [

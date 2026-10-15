@@ -1,6 +1,6 @@
 {
   "name": "promatrix-26",
-  "version": "2.1.33",
+  "version": "2.1.36",
   "scripts": {
     "adr:": "",
     "new-adr": ".\\new-adr.cmd",
@@ -12,13 +12,11 @@
     "prebuild": "npm --no-git-tag-version version patch",
     "build-development": "ng build --configuration development",
     "build-production": "npm run prebuild && ng build",
-    "http-server-dist": "node ./node_modules/http-server/bin/http-server -p 7777 -c-1 dist/pro-matrix-2024/browser",
-    "deploy-all": "npm run deploy-hosting",
+    "http-server-dist": "node ./node_modules/http-server/bin/http-server -p 7777 -c-1 dist/promatrix/browser",
     "deploy-hosting": "npm run build-production && node --no-deprecation ./node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting --project promatrix-us",
-    "publish": "npm run deploy-hosting && npm run launch-hosting-from-firebase",
+    "deploy-&-launch": "npm run deploy-hosting && npm run launch-hosting-from-firebase",
     "launch-hosting-from-firebase": "start chrome --app=https://promatrix-us.web.app --disk-cache-dir=null",
     "dashboard-on-firebase": "start chrome --new-window https://console.firebase.google.com/u/0/project/promatrix-us/overview",
-    "start-2": "ng serve --host=127.0.0.1",
     "ng": "ng"
   },
   "private": true,

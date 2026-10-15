@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/pro-matrix-2024/browser",
+    "public": "dist/promatrix/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
